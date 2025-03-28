@@ -178,10 +178,11 @@ def epsilon_greedy(model, vectorizer, banner_features, candidate_features_list, 
 
 def compute_offline_metrics(impressions, model, vectorizer, epsilon=0.1):
     """
-    Compute offline evaluation metrics (IPS and SNIPS) over all impressions.
+    Compute offline evaluation metrics (IPS and SNIPS) over impressions.
     For each impression, compute the new policy probability for the displayed candidate (assumed index 0)
-    based on the epsilon-greedy rule, and then weight the observed reward by the ratio of the new policy probability
+    based on the epsilon-greedy rule, and weight the observed reward by the ratio of the new policy probability
     to the logged propensity.
+    This function expects `impressions` to be an iterable (it can be a generator).
     """
     total_weighted_reward = 0.0
     total_weight = 0.0
@@ -221,7 +222,7 @@ def compute_offline_metrics(impressions, model, vectorizer, epsilon=0.1):
     print(f"SNIPS estimate: {SNIPS}")
 
 def main():
-    file_path = 'criteo_train.txt/criteo_train.txt'
+    file_path = 'criteo_train_small.txt/criteo_train_small.txt'
     epochs = 3  # Number of complete passes over the dataset
     batch_size = 10000
     
@@ -233,16 +234,10 @@ def main():
     # Train the model incrementally over multiple epochs.
     model = train_model_incremental(file_path, vectorizer, batch_size=batch_size, epochs=epochs)
     
-    # Optionally, compute offline evaluation metrics on a subset.
-    print(f"\n[{time.strftime('%H:%M:%S')}] Computing offline evaluation metrics on a sample of impressions...")
-    sample_impressions = []
-    gen = parse_file_generator(file_path)
-    for i in range(1000):
-        try:
-            sample_impressions.append(next(gen))
-        except StopIteration:
-            break
-    compute_offline_metrics(sample_impressions, model, vectorizer, epsilon=0.1)
+    # Compute offline evaluation metrics using ALL impressions (streaming the file).
+    print(f"\n[{time.strftime('%H:%M:%S')}] Computing offline evaluation metrics on ALL impressions...")
+    # Here we pass the generator directly so that all impressions are processed.
+    compute_offline_metrics(parse_file_generator(file_path), model, vectorizer, epsilon=0.1)
     
     # Test epsilon-greedy on a few impressions.
     print(f"\n[{time.strftime('%H:%M:%S')}] Testing epsilon-greedy decisions on sample impressions:")
