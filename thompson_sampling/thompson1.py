@@ -69,10 +69,10 @@ class ThompsonSamplingBandit:
             self.beta[chosen_arm] += 1 - reward
         
         # Update linear model parameters
-        # Use recursive least squares update
+        # Use simplified Bayesian linear regression update
         self.cov[chosen_arm] += np.outer(context, context)
-        inv_cov = np.linalg.inv(self.cov[chosen_arm])
-        self.theta[chosen_arm] = inv_cov.dot(inv_cov.dot(self.theta[chosen_arm] * (self.cov[chosen_arm] - inv_cov)) + context * reward)
+        error = reward - np.dot(self.theta[chosen_arm], context)
+        self.theta[chosen_arm] += np.linalg.solve(self.cov[chosen_arm], context) * error
 
 def thompson_sampling_train(file_path, vectorizer, batch_size=10000, epochs=3):
     """
