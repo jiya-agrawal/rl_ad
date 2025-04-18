@@ -142,7 +142,7 @@ def train_bayesian_model_incremental(file_path, vectorizer, batch_size=10000, ep
     the training data and retrain on each batch.
     """
     # BayesianRidge doesn't support partial_fit, but we can simulate it
-    model = BayesianRidge(compute_score=True, n_iter=50, alpha_1=1e-6, alpha_2=1e-6, 
+    model = BayesianRidge(compute_score=True, alpha_1=1e-6, alpha_2=1e-6, 
                          lambda_1=1e-6, lambda_2=1e-6)
     
     all_X_batch = []
@@ -183,7 +183,7 @@ def train_bayesian_model_incremental(file_path, vectorizer, batch_size=10000, ep
                     
                     # Concatenate and fit
                     X_train = all_X_batch[0] if len(all_X_batch) == 1 else np.vstack(all_X_batch)
-                    model.fit(X_train, all_y_batch)
+                    model.fit(X_train, all_y_batch)  # Convert sparse to dense
                 
                 batch_num += 1
                 print(f"[{time.strftime('%H:%M:%S')}] Epoch {epoch+1}: Processed batch {batch_num} with {len(X_batch)} impressions. Total processed in epoch: {impressions_processed}.")
@@ -197,7 +197,7 @@ def train_bayesian_model_incremental(file_path, vectorizer, batch_size=10000, ep
 # Thompson Sampling Decision Function
 ########################################
 
-def thompson_sampling(model, vectorizer, banner_features, candidate_features_list, n_samples=10):
+def thompson_sampling(model, vectorizer, banner_features, candidate_features_list, _=10):  # Unused n_samples replaced with _
     """
     Implements Thompson Sampling for candidate selection.
     
@@ -320,15 +320,15 @@ def compute_offline_metrics_ts(impressions, model, vectorizer):
 ########################################
 
 def main():
-    file_path = 'criteo_train.txt/criteo_train.txt'
+    file_path = 'criteo_train_small.txt/criteo_train_small.txt'
     # file_path = 'criteo_train_small.txt/criteo_train_small.txt'
     epochs = 3         # Number of full passes over the dataset
-    batch_size = 10000 # Adjust based on your memory constraints
+    batch_size = 1000 # Adjust based on your memory constraints
     
     print(f"[{time.strftime('%H:%M:%S')}] Starting main process with Thompson Sampling...")
     
     # Step 1: Fit vectorizer on a sample of the data
-    vectorizer = fit_vectorizer_sample(file_path, sample_size=10000)
+    vectorizer = fit_vectorizer_sample(file_path, sample_size=1000)
     
     # Step 2: Train the Bayesian model incrementally
     model = train_bayesian_model_incremental(file_path, vectorizer, batch_size=batch_size, epochs=epochs)
