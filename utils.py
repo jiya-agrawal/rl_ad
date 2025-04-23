@@ -1,13 +1,13 @@
-def parse_criteo_data(file_path, batch_size=1024):
+def parse_train_data(file_path, batch_size=1024):
     """
-    A generator-based parser for the Criteo dataset that yields mini-batches of parsed data.
+    A generator-based parser for the Criteo training dataset.
     
     Args:
         file_path (str): Path to the dataset file (.txt).
         batch_size (int): Number of examples per mini-batch.
     
     Yields:
-        list: A list of dictionaries containing parsed features, labels, and propensity scores for a mini-batch.
+        list: A list of dictionaries containing parsed examples for a mini-batch.
     """
     def parse_header_line(line):
         """
@@ -21,33 +21,28 @@ def parse_criteo_data(file_path, batch_size=1024):
         """
         parts = line.strip().split()
         example_id = parts[0]
-        # print(f"Example ID: {example_id}")
-        # Initialize variables
         label = None
         propensity = None
         display_features = {}
-        # print(f"Parts: {parts}")
-        # Iterate through parts to extract label, propensity, and features
-        i = 1  # Start from index 1 since index 0 is the example ID
+
+        i = 1  # Start from index 1 (skip example ID)
         while i < len(parts):
             part = parts[i]
             if part.startswith("|l"):
-                # Label is the next element after "|l"
-                label = float(parts[i + 1])
-                i += 2  # Skip the next element since it's already processed
+                label = float(parts[i + 1])  # Extract label
+                i += 2
             elif part.startswith("|p"):
-                # Propensity is the next element after "|p"
-                propensity = float(parts[i + 1].split("|")[0])
-                i += 2  # Skip the next element since it's already processed
+                propensity = float(parts[i + 1].split("|")[0])  # Extract propensity
+                i += 2
             elif ":" in part:
-                # Parse display features (|f)
-                # print(f"Pending part {part}")
-                key, value = part.split(":")
-                display_features[int(key)] = float(value)
-                i += 1
+                # Parse display features
+                for feat in parts[i:]:
+                    if ":" not in feat:
+                        break  # Stop parsing features
+                    key, value = feat.split(":")
+                    display_features[int(key)] = float(value)
+                break  # Exit after parsing features
             else:
-                # Handle unexpected format
-                print(f"Unexpected part: {part}")
                 i += 1
         
         return {
@@ -69,16 +64,10 @@ def parse_criteo_data(file_path, batch_size=1024):
             dict: Parsed product features.
         """
         parts = line.strip().split()
-        example_id = parts[0]
-        
-        # Parse product features (|f)
         product_features = {}
-        # print(f"Product line parts: {parts}")
-        for feat in parts[2:]:
-            # print(f"Pending feature {feat}")
+        for feat in parts[2:]:  # Skip example ID and "|f"
             key, value = feat.split(":")
             product_features[int(key)] = float(value)
-        
         return product_features
     
     def read_file():
@@ -87,64 +76,70 @@ def parse_criteo_data(file_path, batch_size=1024):
             for line in f:
                 yield line
     
-    # Initialize variables for batching
     current_batch = []
     header = None
+    expected_products = 0
     
     for line in read_file():
         if line.startswith("|"):
             continue  # Skip malformed lines
         
+        parts = line.strip().split()
+        if not parts:
+            continue  # Skip empty lines
+        
+        example_id = parts[0]
+        
         if "|l" in line and "|p" in line:
-            # Header line
+            # Process previous example if incomplete
             if header is not None:
-                # If there's an incomplete example, skip it
-                header = None
-            
-            header = parse_header_line(line)
-        else:
-            # Product line
-            if header is not None:
-                product_features = parse_product_line(line)
-                header["product_features"].append(product_features)
-            
-            # Yield the batch if we've collected all products for this example
-            if header and len(header["product_features"]) == len(header["product_features"]):
+                # Incomplete example, finalize it
+                header["nb_candidates"] = len(header["product_features"])
                 current_batch.append(header)
-                header = None  # Reset header for the next example
+                if len(current_batch) == batch_size:
+                    yield current_batch
+                    current_batch = []
+            
+            # Start a new example
+            header = parse_header_line(line)
+            expected_products = int(header["display_features"].get(1, 0))  # Get candidate pool size
+        
+        elif header is not None and example_id == header["example_id"]:
+            # Parse product line
+            product = parse_product_line(line)
+            header["product_features"].append(product)
+            expected_products -= 1
+            
+            # If all products are collected, finalize the example
+            if expected_products == 0:
+                header["nb_candidates"] = len(header["product_features"])
+                current_batch.append(header)
+                header = None
                 
-                # Yield the batch if it reaches the desired size
+                # Yield batch if full
                 if len(current_batch) == batch_size:
                     yield current_batch
                     current_batch = []
     
-    # Yield any remaining examples in the last batch
+    # Finalize any remaining examples
+    if header is not None:
+        header["nb_candidates"] = len(header["product_features"])
+        current_batch.append(header)
+    
     if current_batch:
         yield current_batch
 
-# # Path to the dataset file
-# train_data_path = "criteo_train_small.txt/criteo_train_small.txt"
-# test_data_path = "criteo_test_release_small.txt/criteo_test_release_small.txt"
 
-# # Create a parser for the training data
-# train_parser = parse_criteo_data(train_data_path, batch_size=1024)
-
-# # Iterate through mini-batches
-# for batch in train_parser:
-#     # Process the batch (e.g., train your epsilon-greedy model)
-#     print(f"Processed batch with {len(batch)} examples")
-
-
-def parse_criteo_test_data(file_path, batch_size=1024):
+def parse_test_data(file_path, batch_size=1024):
     """
-    A generator-based parser for the Criteo test dataset that yields mini-batches of parsed product features.
+    A generator-based parser for the Criteo test dataset.
     
     Args:
-        file_path (str): Path to the test dataset file (.txt).
+        file_path (str): Path to the dataset file (.txt).
         batch_size (int): Number of examples per mini-batch.
     
     Yields:
-        list: A list of lists containing parsed product features for each example in the mini-batch.
+        list: A list of dictionaries containing parsed examples for a mini-batch.
     """
     def parse_product_line(line):
         """
@@ -158,16 +153,11 @@ def parse_criteo_test_data(file_path, batch_size=1024):
         """
         parts = line.strip().split()
         example_id = parts[0]
-        
-        # Parse product features (|f)
         product_features = {}
-        # print(f"Product line parts: {parts}")
-        for feat in parts[2:]:
-            # print(f"Pending feature {feat}")
+        for feat in parts[2:]:  # Skip example ID and "|f"
             key, value = feat.split(":")
             product_features[int(key)] = float(value)
-        
-        return product_features
+        return example_id, product_features
     
     def read_file():
         """Generator to read the file line by line."""
@@ -175,61 +165,80 @@ def parse_criteo_test_data(file_path, batch_size=1024):
             for line in f:
                 yield line
     
-    # Initialize variables for batching
     current_batch = []
-    current_example = []
+    current_example = None
     current_example_id = None
     
     for line in read_file():
         if line.startswith("|"):
             continue  # Skip malformed lines
         
-        # Parse the product line
         parts = line.strip().split()
-        example_id = parts[0]
+        if not parts:
+            continue  # Skip empty lines
         
+        example_id, product_features = parse_product_line(line)
+        
+        # Start a new example if the example_id changes
         if example_id != current_example_id:
-            # If we've started a new example, finalize the previous one
-            if current_example:
+            if current_example is not None:
                 current_batch.append(current_example)
                 if len(current_batch) == batch_size:
                     yield current_batch
                     current_batch = []
             
-            # Start a new example
+            # Initialize a new example
+            current_example = {
+                "example_id": example_id,
+                "product_features": [product_features]
+            }
             current_example_id = example_id
-            current_example = []
-        
-        # Parse the product features and add them to the current example
-        product_features = parse_product_line(line)
-        current_example.append(product_features)
+        else:
+            # Append product features to the current example
+            current_example["product_features"].append(product_features)
     
-    # Yield any remaining examples in the last batch
-    if current_example:
+    # Finalize any remaining examples
+    if current_example is not None:
         current_batch.append(current_example)
+    
     if current_batch:
         yield current_batch
 
-# test_parser = parse_criteo_test_data(test_data_path, batch_size=1024)
-
-# for batch in test_parser:
-#     # Process the batch (e.g., evaluate your model)
-#     print(f"Processed test batch with {len(batch)} examples")
-
 if __name__ == "__main__":
-    train_data_path = "criteo_train_small.txt/criteo_train_small.txt"
-    test_data_path = "criteo_test_release_small.txt/criteo_test_release_small.txt"
 
-    # Create a parser for the training data
-    train_parser = parse_criteo_data(train_data_path, batch_size=1024)
+    # Path to the dataset file
+    train_data_path = "criteo_train_small.txt/criteo_train_small.txt"
+
+    # Parse training data
+    train_parser = parse_train_data(train_data_path, batch_size=1024)
 
     # Iterate through mini-batches
     for batch in train_parser:
-        # Process the batch (e.g., train your epsilon-greedy model)
         print(f"Processed batch with {len(batch)} examples")
-    # Create a parser for the test data
-    test_parser = parse_criteo_test_data(test_data_path, batch_size=1024)
-    # Iterate through mini-batches
+        for example in batch:
+            print(f"Example ID: {example['example_id']}")
+            print(f"Label: {example['label']}")
+            print(f"Propensity: {example['propensity']}")
+            print(f"Display Features: {example['display_features']}")
+            print(f"Number of Candidates: {example['nb_candidates']}")
+            print("Product Features:")
+            for product in example['product_features']:
+                print(f"  {product}")
+            print("---")
+
+    # Path to the dataset file
+    test_data_path = "criteo_test_release_small.txt/criteo_test_release_small.txt"
+
+    # Parse test data
+    test_parser = parse_test_data(test_data_path, batch_size=10)
+
+    # Inspect the first batch
     for batch in test_parser:
-        # Process the batch (e.g., evaluate your model)
-        print(f"Processed test batch with {len(batch)} examples")
+        for example in batch:
+            print(f"Example ID: {example['example_id']}")
+            print(f"Number of Candidates: {len(example['product_features'])}")
+            print("Product Features:")
+            for product in example['product_features']:
+                print(f"  {product}")
+            print("---")
+        break  # Stop after the first batch
