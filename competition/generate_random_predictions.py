@@ -22,6 +22,7 @@ output = gzip.open(args.output_path, "wb")
 def _format_predictions(predictions):
     predictions = ["{}:{}".format(idx, p) for idx, p in enumerate(predictions)]
     predictionline = "{};{}".format(_impression["id"], ",".join(predictions))
+    print(predictionline)
     return predictionline
 
 def _policy(candidates):
