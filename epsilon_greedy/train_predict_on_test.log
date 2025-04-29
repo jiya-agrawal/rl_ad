@@ -1,0 +1,21 @@
+2025-04-29 11:41:52 INFO     Loading data from data/criteo_train_small.txt
+2025-04-29 11:41:54 INFO     Total impressions found: 20000
+2025-04-29 11:41:54 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-29 11:41:59 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-29 11:41:59 INFO     Training features: 196614, Test features: 49269
+2025-04-29 11:41:59 INFO     Converting training features to sparse matrix...
+2025-04-29 11:42:00 INFO     Converting test features to sparse matrix...
+2025-04-29 11:42:01 INFO     Preparing training features and labels...
+2025-04-29 11:42:01 INFO     Training data: X=(16000, 73578), y=(16000,)
+2025-04-29 11:42:01 INFO     Number of positive samples in training: 837
+2025-04-29 11:42:01 INFO     Training Logistic Regression model...
+2025-04-29 11:42:01 INFO     Solver: liblinear, Penalty: l2, C: 1.0, MaxIter: 1000
+2025-04-29 11:42:02 INFO     Training complete.
+2025-04-29 11:42:02 INFO     Generating predictions on the test data (4000 impressions)...
+2025-04-29 11:42:02 INFO     Saving predictions to data/predictions_on_test.txt.gz
+2025-04-29 11:42:02 INFO     Processed 1000 test impressions
+2025-04-29 11:42:03 INFO     Processed 2000 test impressions
+2025-04-29 11:42:03 INFO     Processed 3000 test impressions
+2025-04-29 11:42:03 INFO     Processed 4000 test impressions
+2025-04-29 11:42:03 INFO     Successfully saved predictions to data/predictions_on_test.txt.gz
+2025-04-29 11:42:03 INFO     Successfully saved test ground truth to data/criteo_test_split.txt.gz
