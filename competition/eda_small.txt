@@ -1,0 +1,111 @@
+Analyzing Criteo dataset: data/criteo_train_small.txt.gz
+
+Analysis completed in 2.94 seconds
+
+=== Criteo Dataset Analysis ===
+Total impressions analyzed: 20000
+Click rate: 0.0527
+
+Candidates per impression:
+  Min: 1
+  Max: 71
+  Mean: 12.29415
+  Median: 11.0
+
+Distribution of candidates per impression:
+  1 candidates: 109 impressions (0.55%)
+  2 candidates: 16 impressions (0.08%)
+  3 candidates: 9 impressions (0.04%)
+  4 candidates: 7 impressions (0.03%)
+  5 candidates: 9 impressions (0.04%)
+  6 candidates: 23 impressions (0.11%)
+  7 candidates: 42 impressions (0.21%)
+  8 candidates: 9 impressions (0.04%)
+  9 candidates: 13 impressions (0.07%)
+  10 candidates: 157 impressions (0.78%)
+  11 candidates: 14477 impressions (72.39%)
+  12 candidates: 1997 impressions (9.98%)
+  13 candidates: 913 impressions (4.57%)
+  14 candidates: 507 impressions (2.54%)
+  15 candidates: 411 impressions (2.05%)
+  16 candidates: 167 impressions (0.83%)
+  17 candidates: 136 impressions (0.68%)
+  18 candidates: 106 impressions (0.53%)
+  19 candidates: 89 impressions (0.45%)
+  20 candidates: 84 impressions (0.42%)
+  21 candidates: 45 impressions (0.22%)
+  22 candidates: 29 impressions (0.14%)
+  23 candidates: 35 impressions (0.18%)
+  24 candidates: 36 impressions (0.18%)
+  25 candidates: 34 impressions (0.17%)
+  26 candidates: 26 impressions (0.13%)
+  27 candidates: 20 impressions (0.10%)
+  28 candidates: 15 impressions (0.07%)
+  29 candidates: 13 impressions (0.07%)
+  30 candidates: 24 impressions (0.12%)
+  31 candidates: 93 impressions (0.46%)
+  32 candidates: 27 impressions (0.14%)
+  33 candidates: 22 impressions (0.11%)
+  34 candidates: 12 impressions (0.06%)
+  35 candidates: 25 impressions (0.12%)
+  36 candidates: 12 impressions (0.06%)
+  37 candidates: 21 impressions (0.10%)
+  38 candidates: 19 impressions (0.10%)
+  39 candidates: 15 impressions (0.07%)
+  40 candidates: 19 impressions (0.10%)
+  41 candidates: 8 impressions (0.04%)
+  42 candidates: 11 impressions (0.06%)
+  43 candidates: 8 impressions (0.04%)
+  44 candidates: 12 impressions (0.06%)
+  45 candidates: 18 impressions (0.09%)
+  46 candidates: 8 impressions (0.04%)
+  47 candidates: 8 impressions (0.04%)
+  48 candidates: 9 impressions (0.04%)
+  49 candidates: 9 impressions (0.04%)
+  50 candidates: 11 impressions (0.06%)
+  51 candidates: 10 impressions (0.05%)
+  52 candidates: 7 impressions (0.03%)
+  53 candidates: 7 impressions (0.03%)
+  54 candidates: 5 impressions (0.03%)
+  55 candidates: 6 impressions (0.03%)
+  56 candidates: 5 impressions (0.03%)
+  57 candidates: 6 impressions (0.03%)
+  58 candidates: 1 impressions (0.01%)
+  59 candidates: 2 impressions (0.01%)
+  60 candidates: 1 impressions (0.01%)
+  61 candidates: 5 impressions (0.03%)
+  62 candidates: 2 impressions (0.01%)
+  63 candidates: 1 impressions (0.01%)
+  64 candidates: 3 impressions (0.01%)
+  65 candidates: 1 impressions (0.01%)
+  66 candidates: 2 impressions (0.01%)
+  67 candidates: 4 impressions (0.02%)
+  68 candidates: 1 impressions (0.01%)
+  69 candidates: 2 impressions (0.01%)
+  70 candidates: 3 impressions (0.01%)
+  71 candidates: 1 impressions (0.01%)
+
+Propensity scores:
+  Min: 2.1264380000012202e-05
+  Max: 1.0
+  Mean: 0.06685072859273504
+  Median: 0.039935510000022295
+
+Number of unique features: 13918
+
+Top 10 most common feature IDs:
+  Feature ID 0: 20000 occurrences
+  Feature ID 1: 20000 occurrences
+  Feature ID 2: 20000 occurrences
+  Feature ID 12: 16356 occurrences
+  Feature ID 14: 16356 occurrences
+  Feature ID 49: 10607 occurrences
+  Feature ID 10: 9518 occurrences
+  Feature ID 11: 9393 occurrences
+  Feature ID 13: 9393 occurrences
+  Feature ID 192: 9211 occurrences
+
+Saved candidates distribution plot to eda_graphs/candidates_distribution.png
+Saved log-scale candidates distribution plot to eda_graphs/candidates_distribution_log.png
+Saved propensity distribution plot to eda_graphs/propensity_distribution.png
+Saved log-scale propensity distribution plot to eda_graphs/propensity_distribution_log.png

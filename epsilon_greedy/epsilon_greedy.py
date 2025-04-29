@@ -22,7 +22,7 @@ def main():
     )
     parser.add_argument(
         "--train-path",
-        default="data/criteo_train_small.txt",
+        default="data/criteo_train.txt.gz",
         help="Path to the training data file.",
     )
     parser.add_argument(
