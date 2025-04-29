@@ -24,8 +24,8 @@ def grade_predictions(predictions_path, gold_labels_path, expected_number_of_pre
     num_negative_instances = 0
 
     #NewPolicy - Stochastic
-    prediction_stochastic_numerator = np.zeros(max_instances, dtype = np.float)
-    prediction_stochastic_denominator = np.zeros(max_instances, dtype = np.float)
+    prediction_stochastic_numerator = np.zeros(max_instances, dtype = np.float64)
+    prediction_stochastic_denominator = np.zeros(max_instances, dtype = np.float64)
 
     impression_counter = 0
     for _idx, _impression in enumerate(gold_data):
@@ -129,6 +129,5 @@ def grade_predictions(predictions_path, gold_labels_path, expected_number_of_pre
     return compute_result('NewPolicy-Stochastic', prediction_stochastic_numerator, prediction_stochastic_denominator)
 
 if __name__ == "__main__":
-    gold_labels_path = "data/cntk_train_small.txt.gz"
-    predictions_path = "data/predictions.txt.gz"
+    gold_labels_path = "data/criteo_train_small.txt.gz"
     print(grade_predictions(predictions_path, gold_labels_path, _debug=True))
