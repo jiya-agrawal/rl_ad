@@ -6,6 +6,8 @@ from criteo_prediction import CriteoPrediction
 
 import numpy as np
 import utils
+import argparse
+import os
 
 def grade_predictions(predictions_path, gold_labels_path, expected_number_of_predictions=False, force_gzip=False, _context=False, salt_swap=False, inverse_propensity_in_gold_data=True, jobfactory_utils=False, _debug = False):
     gold_data = CriteoDataset(gold_labels_path, isGzip=force_gzip, inverse_propensity=inverse_propensity_in_gold_data)
@@ -128,6 +130,50 @@ def grade_predictions(predictions_path, gold_labels_path, expected_number_of_pre
 
     return compute_result('NewPolicy-Stochastic', prediction_stochastic_numerator, prediction_stochastic_denominator)
 
+def main():
+    parser = argparse.ArgumentParser(
+        description="Evaluate predictions using the test split as ground truth."
+    )
+    parser.add_argument(
+        "--predictions-path",
+        default="data/predictions_on_test.txt.gz",
+        help="Path to the prediction file (gzipped).",
+    )
+    parser.add_argument(
+        "--gold-labels-path",
+        default="data/criteo_test_split.txt.gz",
+        help="Path to the test data (20% split) file (gzipped).",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable debug output.",
+    )
+    
+    args = parser.parse_args()
+    
+    # Check if files exist
+    if not os.path.exists(args.predictions_path):
+        print(f"Error: Predictions file not found: {args.predictions_path}")
+        return
+    
+    if not os.path.exists(args.gold_labels_path):
+        print(f"Error: Gold labels file not found: {args.gold_labels_path}")
+        return
+    
+    # Grade the predictions
+    result = grade_predictions(
+        args.predictions_path,
+        args.gold_labels_path,
+        force_gzip=True,
+        _debug=args.debug
+    )
+    
+    print("\n=== Evaluation Results ===")
+    print(f"IPS Score (*10^4): {result['ips']:.4f} ± {result['ips_std']:.4f}")
+    print(f"SN-IPS Score (*10^4): {result['snips']:.4f} ± {result['snips_std']:.4f}")
+    print(f"Average Importance Weight: {result['impwt']:.6f} ± {result['impwt_std']:.6f}")
+    print(f"Number of impressions evaluated: {result['max_instances']}")
+
 if __name__ == "__main__":
-    gold_labels_path = "data/criteo_train_small.txt.gz"
-    print(grade_predictions(predictions_path, gold_labels_path, _debug=True))
+    main()
