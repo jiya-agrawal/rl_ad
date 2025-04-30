@@ -3,6 +3,10 @@ from scipy.sparse import csr_matrix
 import math
 from sklearn.preprocessing import normalize
 from tqdm import tqdm
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class ThompsonSamplingPolicy:
     """
@@ -36,38 +40,21 @@ class ThompsonSamplingPolicy:
     def _extract_features(self, candidate):
         """
         Extract features from a candidate dictionary.
-        Handles both sparse and dense feature representations.
+        Handles the specific data format where features are represented as a dictionary of index:value pairs.
         """
-        if 'features' not in candidate:
-            return np.zeros(self.feature_dim)
-            
-        features = candidate['features']
-        
-        # If features are already in the right format, return them directly
-        if isinstance(features, np.ndarray) and len(features) == self.feature_dim:
-            return features
-            
-        # If features are in sparse format (list of non-zero indices or index:value pairs)
-        if isinstance(features, list) or isinstance(features, dict):
-            if self.sparse_features:
-                # Handle sparse feature format based on the actual data structure
-                # This is a placeholder - you'll need to adapt based on your actual data format
-                sparse_vec = np.zeros(self.feature_dim)
-                
-                if isinstance(features, list):
-                    # If features is a list of indices
-                    for idx in features:
-                        if isinstance(idx, int) and 0 <= idx < self.feature_dim:
-                            sparse_vec[idx] = 1.0
-                else:
-                    # If features is a dictionary of index:value pairs
-                    for idx, value in features.items():
-                        if isinstance(idx, int) and 0 <= int(idx) < self.feature_dim:
-                            sparse_vec[int(idx)] = value
-                            
-                return sparse_vec
-        
+        # Check if the candidate is a dictionary of index:value pairs
+        if isinstance(candidate, dict):
+            sparse_vec = np.zeros(self.feature_dim)
+
+            for idx, value in candidate.items():
+                if isinstance(idx, int) and 0 <= idx < self.feature_dim:
+                    sparse_vec[idx] = value
+
+            # logging.debug(f"Extracted sparse vector: {sparse_vec}")
+            return sparse_vec
+
         # Default: return zero vector if feature extraction fails
+        logging.debug(f"Feature extraction failed for candidate: {candidate}. Returning zero vector.")
         return np.zeros(self.feature_dim)
     
     def _sigmoid(self, z):
