@@ -49,10 +49,11 @@ def extract_feature_dimensionality(first_impression):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Tune Thompson Sampling with Logistic Regression for the dataset.")
-    parser.add_argument("--dataset_path", required=True, help="Path to the full dataset file (e.g., criteo_train_small.txt.gz).")
+    parser.add_argument("--training_set", required=True, help="Path to the dataset file used for training (e.g., criteo_train_small.txt.gz)")
+    parser.add_argument("--test_set", required=True, help="Path to the dataset file to generate predictions for (can be the same as training_set)")
+    parser.add_argument("--split_ratio", type=float, default=0.8, help="Ratio of data to use for training (e.g., 0.8 for 80/20 split).")
     parser.add_argument("--feature_dim", type=int, default=None, help="Dimensionality of feature vectors. If not provided, will attempt to determine from data.")
     parser.add_argument("--lambda_prior", type=float, default=1.0, help="Prior precision for the Bayesian logistic regression.")
-    parser.add_argument("--split_ratio", type=float, default=0.8, help="Ratio of data to use for training (e.g., 0.8 for 80/20 split).")
     parser.add_argument("--force_gzip", action='store_true', help="Force reading/writing files as gzip.")
     parser.add_argument("--no_inverse_propensity", action='store_true', help="Flag if propensity is NOT stored as inverse in data.")
     parser.add_argument("--sparse_features", action='store_true', help="Flag if features are stored in sparse format.")
@@ -61,8 +62,9 @@ if __name__ == "__main__":
 
     inverse_propensity_in_data = not args.no_inverse_propensity
 
-    print(f"Loading and splitting dataset: {args.dataset_path}")
-    full_dataset = CriteoDataset(args.dataset_path, isTest=False, isGzip=args.force_gzip, inverse_propensity=inverse_propensity_in_data)
+    # Load and split dataset
+    print(f"Loading and splitting dataset: {args.training_set}")
+    full_dataset = CriteoDataset(args.training_set, isTest=False, isGzip=args.force_gzip, inverse_propensity=inverse_propensity_in_data)
     all_impressions = list(full_dataset)
     full_dataset.close()
     print(f"Total impressions loaded: {len(all_impressions)}")
@@ -83,10 +85,12 @@ if __name__ == "__main__":
 
     print(f"Feature dimensionality used: {feature_dim}")
 
-    train_impressions, validation_impressions = train_test_split(
+    # Split the dataset into training and testing sets
+    train_impressions, test_impressions = train_test_split(
         all_impressions, train_size=args.split_ratio, shuffle=True, random_state=42
     )
-    print(f"Split into {len(train_impressions)} training and {len(validation_impressions)} validation impressions.")
+
+    print(f"Split into {len(train_impressions)} training and {len(test_impressions)} testing impressions.")
 
     results_log = []
 
@@ -102,7 +106,7 @@ if __name__ == "__main__":
     print(f"Validation gold labels will be saved to: {temp_gold_path}")
     print(f"Thompson predictions will be saved to: {temp_pred_path}")
 
-    write_criteo_format(validation_impressions, temp_gold_path, force_gzip=True, inverse_propensity=inverse_propensity_in_data)
+    write_criteo_format(test_impressions, temp_gold_path, force_gzip=True, inverse_propensity=inverse_propensity_in_data)
 
     print("\n----- Training Thompson Sampling Policy with Logistic Regression -----")
     policy = ThompsonSamplingPolicy(
@@ -115,7 +119,7 @@ if __name__ == "__main__":
     print("Generating predictions for validation set...")
     try:
         with gzip.open(temp_pred_path, "wt", encoding='utf-8') as output:
-            for impression in tqdm(validation_impressions, desc="Predicting"):
+            for impression in tqdm(test_impressions, desc="Predicting"):
                 predictions = policy.predict(impression["candidates"])
                 predictionline = "{};{}".format(
                     impression["id"],
