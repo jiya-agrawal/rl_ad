@@ -267,7 +267,7 @@ def main():
     )
     parser.add_argument(
         "--train-path",
-        default="data/criteo_train.txt",
+        default="../epsilon_greedy/data/criteo_train_small.txt.gz",
         help="Path to the training data file.",
     )
     parser.add_argument(
@@ -300,7 +300,7 @@ def main():
         "--batch-size", type=int, default=32, help="Batch size for training."
     )
     parser.add_argument(
-        "--train-epochs", type=int, default=3, help="Number of training epochs."
+        "--train-epochs", type=int, default=1, help="Number of training epochs."
     )
     parser.add_argument(
         "--log-path", default="actor_critic.log", help="Path to log file."

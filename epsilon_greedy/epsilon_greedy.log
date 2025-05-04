@@ -1,31 +1,134 @@
-2025-04-29 11:50:00 INFO     Using epsilon = 0.1 for the epsilon-greedy approach
-2025-04-29 11:50:22 INFO     Using epsilon = 0.1 for the epsilon-greedy approach
-2025-04-29 11:50:26 INFO     Total impressions found: 20000
-2025-04-29 11:50:26 INFO     Split data: 16000 training impressions, 4000 test impressions
-2025-04-29 11:50:31 INFO     Test data saved to data/criteo_test_split.txt.gz
-2025-04-29 11:50:31 INFO     Training features: 196614, Test features: 49269
-2025-04-29 11:50:31 INFO     Converting training features to sparse matrix...
-2025-04-29 11:50:33 INFO     Converting test features to sparse matrix...
-2025-04-29 11:50:33 INFO     Preparing training features and labels...
-2025-04-29 11:50:33 INFO     Training data shape: X=(16000, 73578), y=(16000,)
-2025-04-29 11:50:33 INFO     Number of positive samples in training: 837
-2025-04-29 11:50:33 INFO     Training Logistic Regression model...
-2025-04-29 11:52:11 INFO     Using epsilon = 0.1 for the epsilon-greedy approach
-2025-04-29 11:52:14 INFO     Total impressions found: 20000
-2025-04-29 11:52:14 INFO     Split data: 16000 training impressions, 4000 test impressions
-2025-04-29 11:52:19 INFO     Test data saved to data/criteo_test_split.txt.gz
-2025-04-29 11:52:19 INFO     Training features: 196614, Test features: 49269
-2025-04-29 11:52:19 INFO     Converting training features to sparse matrix...
-2025-04-29 11:52:21 INFO     Converting test features to sparse matrix...
-2025-04-29 11:52:22 INFO     Preparing training features and labels...
-2025-04-29 11:52:22 INFO     Training data shape: X=(16000, 73578), y=(16000,)
-2025-04-29 11:52:22 INFO     Number of positive samples in training: 837
-2025-04-29 11:52:22 INFO     Training Logistic Regression model...
-2025-04-29 11:52:23 INFO     Generating predictions with epsilon-greedy approach on TEST DATA...
-2025-04-29 11:52:23 INFO     Processed 1000 test impressions
-2025-04-29 11:52:23 INFO     Processed 2000 test impressions
-2025-04-29 11:52:23 INFO     Processed 3000 test impressions
-2025-04-29 11:52:23 INFO     Processed 4000 test impressions
-2025-04-29 11:52:23 INFO     Successfully saved predictions to data/epsilon_greedy_predictions_on_test.txt.gz
-2025-04-29 11:52:23 INFO     Successfully saved test ground truth to data/criteo_test_split.txt.gz
-2025-04-29 11:52:23 INFO     Total test impressions processed: 4000
+2025-04-29 21:49:40 INFO     Using epsilon = 0.1 for the epsilon-greedy approach
+2025-04-29 23:07:46 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-29 23:53:44 INFO     Total impressions found: 14175476
+2025-04-29 23:53:57 INFO     Split data: 11340380 training impressions, 2835096 test impressions
+2025-04-30 13:46:13 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 13:46:13 INFO     Using pre-split training data from data/train_small_80.txt
+2025-04-30 13:46:13 INFO     Using pre-split test data from data/test_small_20.txt
+2025-04-30 13:46:13 INFO     Processing training data...
+2025-04-30 13:46:15 INFO     Processing test data...
+2025-04-30 13:53:35 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 13:53:35 INFO     Using pre-split training data from data/train_small_80.txt
+2025-04-30 13:53:35 INFO     Using pre-split test data from data/test_small_20.txt
+2025-04-30 13:53:35 INFO     Processing training data...
+2025-04-30 13:53:45 INFO     Processing test data...
+2025-04-30 13:53:46 INFO     Training features: 196708, Test features: 49175
+2025-04-30 13:53:46 INFO     Converting training features to sparse matrix...
+2025-04-30 13:53:48 INFO     Converting test features to sparse matrix...
+2025-04-30 13:53:49 INFO     Preparing training features and labels...
+2025-04-30 13:53:49 INFO     Training data shape: X=(15955, 73578), y=(15955,)
+2025-04-30 13:53:49 INFO     Number of positive samples in training: 826
+2025-04-30 13:53:49 INFO     Training Logistic Regression model...
+2025-04-30 13:53:50 INFO     Generating predictions with epsilon-greedy approach on TEST DATA...
+2025-04-30 13:53:51 INFO     Processed 1000 test impressions
+2025-04-30 13:53:51 INFO     Processed 2000 test impressions
+2025-04-30 13:53:52 INFO     Processed 3000 test impressions
+2025-04-30 13:53:52 INFO     Processed 4000 test impressions
+2025-04-30 13:53:52 INFO     Successfully saved predictions to data/epsilon_greedy_predictions_on_test.txt.gz
+2025-04-30 13:53:52 INFO     Total test impressions processed: 4045
+2025-04-30 14:33:51 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 14:33:53 INFO     Total impressions found: 20000
+2025-04-30 14:33:53 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 14:33:57 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-30 14:33:57 INFO     Training features: 196614, Test features: 49269
+2025-04-30 14:33:57 INFO     Converting training features to sparse matrix...
+2025-04-30 14:33:59 INFO     Converting test features to sparse matrix...
+2025-04-30 14:33:59 INFO     Preparing training features and labels...
+2025-04-30 14:33:59 INFO     Training data shape: X=(16000, 73578), y=(16000,)
+2025-04-30 14:33:59 INFO     Number of positive samples in training: 837
+2025-04-30 14:33:59 INFO     Training Logistic Regression model...
+2025-04-30 14:34:00 INFO     Generating predictions with epsilon-greedy approach on TEST DATA...
+2025-04-30 14:34:00 INFO     Processed 1000 test impressions
+2025-04-30 14:34:00 INFO     Processed 2000 test impressions
+2025-04-30 14:34:00 INFO     Processed 3000 test impressions
+2025-04-30 14:34:00 INFO     Processed 4000 test impressions
+2025-04-30 14:34:00 INFO     Successfully saved predictions to data/epsilon_greedy_predictions_on_test.txt.gz
+2025-04-30 14:34:00 INFO     Successfully saved test ground truth to data/criteo_test_split.txt.gz
+2025-04-30 14:34:00 INFO     Total test impressions processed: 4000
+2025-04-30 14:34:46 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 14:34:49 INFO     Total impressions found: 20000
+2025-04-30 14:34:49 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 14:34:55 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-30 14:34:55 INFO     Training features: 196614, Test features: 49269
+2025-04-30 14:34:55 INFO     Converting training features to sparse matrix...
+2025-04-30 14:34:56 INFO     Converting test features to sparse matrix...
+2025-04-30 14:34:56 INFO     Preparing training features and labels...
+2025-04-30 14:34:56 INFO     Training data shape: X=(16000, 73578), y=(16000,)
+2025-04-30 14:34:56 INFO     Number of positive samples in training: 837
+2025-04-30 14:34:56 INFO     Training Logistic Regression model...
+2025-04-30 14:34:57 INFO     Generating predictions with epsilon-greedy approach on TEST DATA...
+2025-04-30 14:34:57 INFO     Processed 1000 test impressions
+2025-04-30 14:34:58 INFO     Processed 2000 test impressions
+2025-04-30 14:34:58 INFO     Processed 3000 test impressions
+2025-04-30 14:34:58 INFO     Processed 4000 test impressions
+2025-04-30 14:34:58 INFO     Successfully saved predictions to data/epsilon_greedy_predictions_on_test.txt.gz
+2025-04-30 14:34:58 INFO     Successfully saved test ground truth to data/criteo_test_split.txt.gz
+2025-04-30 14:34:58 INFO     Total test impressions processed: 4000
+2025-04-30 14:42:31 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 14:42:31 INFO     Creating train-test split...
+2025-04-30 14:42:34 INFO     Total impressions found: 20000
+2025-04-30 14:42:34 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 14:42:38 INFO     Test data saved to data/criteo_test_split.txt.gz with 4000 impressions
+2025-04-30 14:42:38 INFO     Train-test split saved to data/train_impression_ids.txt and data/test_impression_ids.txt
+2025-04-30 14:42:38 INFO     Training model in batches...
+2025-04-30 14:42:38 INFO     Loaded 16000 training impression IDs
+2025-04-30 14:43:27 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 14:43:27 INFO     Creating train-test split...
+2025-04-30 14:43:29 INFO     Total impressions found: 20000
+2025-04-30 14:43:29 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 14:43:33 INFO     Test data saved to data/criteo_test_split.txt.gz with 4000 impressions
+2025-04-30 14:43:33 INFO     Train-test split saved to data/train_impression_ids.txt and data/test_impression_ids.txt
+2025-04-30 14:43:33 INFO     Training model in batches...
+2025-04-30 14:43:33 INFO     Loaded 16000 training impression IDs
+2025-04-30 14:45:01 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 14:45:04 INFO     Total impressions found: 20000
+2025-04-30 14:45:04 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 14:45:09 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-30 14:45:09 INFO     Training features: 196614, Test features: 49269
+2025-04-30 14:45:09 INFO     Converting training features to sparse matrix...
+2025-04-30 14:45:11 INFO     Converting test features to sparse matrix...
+2025-04-30 14:45:11 INFO     Preparing training features and labels...
+2025-04-30 14:45:11 INFO     Training data shape: X=(16000, 73578), y=(16000,)
+2025-04-30 14:45:11 INFO     Number of positive samples in training: 837
+2025-04-30 14:45:11 INFO     Training Logistic Regression model...
+2025-04-30 14:45:13 INFO     Generating predictions with epsilon-greedy approach on TEST DATA...
+2025-04-30 14:45:13 INFO     Processed 1000 test impressions
+2025-04-30 14:45:13 INFO     Processed 2000 test impressions
+2025-04-30 14:45:14 INFO     Processed 3000 test impressions
+2025-04-30 14:45:14 INFO     Processed 4000 test impressions
+2025-04-30 14:45:14 INFO     Successfully saved predictions to data/epsilon_greedy_predictions_on_test.txt.gz
+2025-04-30 14:45:14 INFO     Successfully saved test ground truth to data/criteo_test_split.txt.gz
+2025-04-30 14:45:14 INFO     Total test impressions processed: 4000
+2025-04-30 14:46:11 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 14:46:14 INFO     Total impressions found: 20000
+2025-04-30 14:46:14 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 14:46:18 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-30 14:46:18 INFO     Training features: 196614, Test features: 49269
+2025-04-30 14:46:18 INFO     Converting training features to sparse matrix...
+2025-04-30 14:46:19 INFO     Converting test features to sparse matrix...
+2025-04-30 14:46:20 INFO     Preparing training features and labels...
+2025-04-30 14:46:20 INFO     Training data shape: X=(16000, 73578), y=(16000,)
+2025-04-30 14:46:20 INFO     Number of positive samples in training: 837
+2025-04-30 14:46:20 INFO     Training model in batches...
+2025-04-30 14:46:20 INFO     Loaded 16000 training impression IDs
+2025-04-30 14:46:20 INFO     Trained on batch of 1000 impressions, total processed: 1000, positive labels: 48
+2025-04-30 17:49:22 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 17:49:48 INFO     Using epsilon = 0.85 for the epsilon-greedy approach
+2025-04-30 17:49:52 INFO     Total impressions found: 20000
+2025-04-30 17:49:52 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 17:50:01 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-30 17:50:01 INFO     Training features: 196614, Test features: 49269
+2025-04-30 17:50:01 INFO     Converting training features to sparse matrix...
+2025-04-30 17:50:04 INFO     Converting test features to sparse matrix...
+2025-04-30 17:50:05 INFO     Preparing training features and labels...
+2025-04-30 17:50:05 INFO     Training data shape: X=(16000, 73578), y=(16000,)
+2025-04-30 17:50:05 INFO     Number of positive samples in training: 837
+2025-04-30 17:50:05 INFO     Training Logistic Regression model...
+2025-04-30 17:50:07 INFO     Generating predictions with epsilon-greedy approach on TEST DATA...
+2025-04-30 17:50:08 INFO     Processed 1000 test impressions
+2025-04-30 17:50:08 INFO     Processed 2000 test impressions
+2025-04-30 17:50:08 INFO     Processed 3000 test impressions
+2025-04-30 17:50:09 INFO     Processed 4000 test impressions
+2025-04-30 17:50:09 INFO     Successfully saved predictions to data/epsilon_greedy_predictions_on_test.txt.gz
+2025-04-30 17:50:09 INFO     Successfully saved test ground truth to data/criteo_test_split.txt.gz
+2025-04-30 17:50:09 INFO     Total test impressions processed: 4000

@@ -22,7 +22,7 @@ def main():
     )
     parser.add_argument(
         "--train-path",
-        default="data/criteo_train.txt.gz",
+        default="data/criteo_train_small.txt.gz",
         help="Path to the training data file.",
     )
     parser.add_argument(
@@ -38,7 +38,7 @@ def main():
     parser.add_argument(
         "--epsilon",
         type=float,
-        default=0.1,
+        default=0.85,
         help="Epsilon value for exploration (between 0 and 1).",
     )
     parser.add_argument(

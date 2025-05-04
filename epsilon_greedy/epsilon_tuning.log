@@ -1,0 +1,325 @@
+2025-04-29 22:34:06 INFO     Starting epsilon tuning
+2025-04-29 22:34:06 INFO     Testing epsilon values from 0.0 to 0.99 (3 values)
+2025-04-29 22:34:06 INFO     Running epsilon-greedy with epsilon=0.000
+2025-04-29 22:34:21 INFO     Running epsilon-greedy with epsilon=0.495
+2025-04-29 22:34:37 INFO     Running epsilon-greedy with epsilon=0.990
+2025-04-29 22:34:54 INFO     Evaluating predictions for epsilon=0.000
+2025-04-29 22:34:55 INFO     Epsilon=0.000, IPS=33.9504, SNIPS=37.2624
+2025-04-29 22:34:55 INFO     Evaluating predictions for epsilon=0.495
+2025-04-29 22:34:56 INFO     Epsilon=0.495, IPS=37.2860, SNIPS=42.1063
+2025-04-29 22:34:56 INFO     Evaluating predictions for epsilon=0.990
+2025-04-29 22:34:57 INFO     Epsilon=0.990, IPS=31.1952, SNIPS=34.0575
+2025-04-29 22:34:57 INFO     
+=== Epsilon Tuning Results ===
+2025-04-29 22:34:57 INFO     Best epsilon for IPS: 0.495 (IPS=37.2860)
+2025-04-29 22:34:57 INFO     Best epsilon for SNIPS: 0.495 (SNIPS=42.1063)
+2025-04-29 22:34:57 INFO     Saved results plot to results/epsilon_tuning_plot.png
+2025-04-29 22:34:57 INFO     Epsilon tuning completed
+2025-04-29 22:36:51 INFO     Starting epsilon tuning
+2025-04-29 22:36:51 INFO     Testing epsilon values from 0.0 to 0.99 (100 values)
+2025-04-29 22:36:51 INFO     Running epsilon-greedy with epsilon=0.000
+2025-04-29 22:37:03 INFO     Running epsilon-greedy with epsilon=0.010
+2025-04-29 22:37:19 INFO     Running epsilon-greedy with epsilon=0.020
+2025-04-29 22:37:39 INFO     Running epsilon-greedy with epsilon=0.030
+2025-04-29 22:37:56 INFO     Running epsilon-greedy with epsilon=0.040
+2025-04-29 22:38:14 INFO     Running epsilon-greedy with epsilon=0.050
+2025-04-29 22:38:33 INFO     Running epsilon-greedy with epsilon=0.060
+2025-04-29 22:38:52 INFO     Running epsilon-greedy with epsilon=0.070
+2025-04-29 22:39:09 INFO     Running epsilon-greedy with epsilon=0.080
+2025-04-29 22:39:27 INFO     Running epsilon-greedy with epsilon=0.090
+2025-04-29 22:39:48 INFO     Running epsilon-greedy with epsilon=0.100
+2025-04-29 22:40:10 INFO     Running epsilon-greedy with epsilon=0.110
+2025-04-29 22:40:27 INFO     Running epsilon-greedy with epsilon=0.120
+2025-04-29 22:40:42 INFO     Running epsilon-greedy with epsilon=0.130
+2025-04-29 22:40:59 INFO     Running epsilon-greedy with epsilon=0.140
+2025-04-29 22:41:14 INFO     Running epsilon-greedy with epsilon=0.150
+2025-04-29 22:41:29 INFO     Running epsilon-greedy with epsilon=0.160
+2025-04-29 22:41:46 INFO     Running epsilon-greedy with epsilon=0.170
+2025-04-29 22:42:01 INFO     Running epsilon-greedy with epsilon=0.180
+2025-04-29 22:42:19 INFO     Running epsilon-greedy with epsilon=0.190
+2025-04-29 22:42:34 INFO     Running epsilon-greedy with epsilon=0.200
+2025-04-29 22:42:51 INFO     Running epsilon-greedy with epsilon=0.210
+2025-04-29 22:43:07 INFO     Running epsilon-greedy with epsilon=0.220
+2025-04-29 22:43:23 INFO     Running epsilon-greedy with epsilon=0.230
+2025-04-29 22:43:39 INFO     Running epsilon-greedy with epsilon=0.240
+2025-04-29 22:43:56 INFO     Running epsilon-greedy with epsilon=0.250
+2025-04-29 22:44:12 INFO     Running epsilon-greedy with epsilon=0.260
+2025-04-29 22:44:31 INFO     Running epsilon-greedy with epsilon=0.270
+2025-04-29 22:44:46 INFO     Running epsilon-greedy with epsilon=0.280
+2025-04-29 22:45:03 INFO     Running epsilon-greedy with epsilon=0.290
+2025-04-29 22:45:18 INFO     Running epsilon-greedy with epsilon=0.300
+2025-04-29 22:45:35 INFO     Running epsilon-greedy with epsilon=0.310
+2025-04-29 22:45:50 INFO     Running epsilon-greedy with epsilon=0.320
+2025-04-29 22:46:08 INFO     Running epsilon-greedy with epsilon=0.330
+2025-04-29 22:46:23 INFO     Running epsilon-greedy with epsilon=0.340
+2025-04-29 22:46:39 INFO     Running epsilon-greedy with epsilon=0.350
+2025-04-29 22:46:54 INFO     Running epsilon-greedy with epsilon=0.360
+2025-04-29 22:47:11 INFO     Running epsilon-greedy with epsilon=0.370
+2025-04-29 22:47:26 INFO     Running epsilon-greedy with epsilon=0.380
+2025-04-29 22:47:43 INFO     Running epsilon-greedy with epsilon=0.390
+2025-04-29 22:47:59 INFO     Running epsilon-greedy with epsilon=0.400
+2025-04-29 22:48:16 INFO     Running epsilon-greedy with epsilon=0.410
+2025-04-29 22:48:31 INFO     Running epsilon-greedy with epsilon=0.420
+2025-04-29 22:48:48 INFO     Running epsilon-greedy with epsilon=0.430
+2025-04-29 22:49:03 INFO     Running epsilon-greedy with epsilon=0.440
+2025-04-29 22:49:18 INFO     Running epsilon-greedy with epsilon=0.450
+2025-04-29 22:49:35 INFO     Running epsilon-greedy with epsilon=0.460
+2025-04-29 22:49:51 INFO     Running epsilon-greedy with epsilon=0.470
+2025-04-29 22:50:07 INFO     Running epsilon-greedy with epsilon=0.480
+2025-04-29 22:50:22 INFO     Running epsilon-greedy with epsilon=0.490
+2025-04-29 22:50:39 INFO     Running epsilon-greedy with epsilon=0.500
+2025-04-29 22:50:55 INFO     Running epsilon-greedy with epsilon=0.510
+2025-04-29 22:51:11 INFO     Running epsilon-greedy with epsilon=0.520
+2025-04-29 22:51:25 INFO     Running epsilon-greedy with epsilon=0.530
+2025-04-29 22:51:42 INFO     Running epsilon-greedy with epsilon=0.540
+2025-04-29 22:51:57 INFO     Running epsilon-greedy with epsilon=0.550
+2025-04-29 22:52:14 INFO     Running epsilon-greedy with epsilon=0.560
+2025-04-29 22:52:30 INFO     Running epsilon-greedy with epsilon=0.570
+2025-04-29 22:52:46 INFO     Running epsilon-greedy with epsilon=0.580
+2025-04-29 22:53:00 INFO     Running epsilon-greedy with epsilon=0.590
+2025-04-29 22:53:16 INFO     Running epsilon-greedy with epsilon=0.600
+2025-04-29 22:53:31 INFO     Running epsilon-greedy with epsilon=0.610
+2025-04-29 22:53:45 INFO     Running epsilon-greedy with epsilon=0.620
+2025-04-29 22:54:02 INFO     Running epsilon-greedy with epsilon=0.630
+2025-04-29 22:54:16 INFO     Running epsilon-greedy with epsilon=0.640
+2025-04-29 22:54:32 INFO     Running epsilon-greedy with epsilon=0.650
+2025-04-29 22:54:47 INFO     Running epsilon-greedy with epsilon=0.660
+2025-04-29 22:55:03 INFO     Running epsilon-greedy with epsilon=0.670
+2025-04-29 22:55:18 INFO     Running epsilon-greedy with epsilon=0.680
+2025-04-29 22:55:34 INFO     Running epsilon-greedy with epsilon=0.690
+2025-04-29 22:55:48 INFO     Running epsilon-greedy with epsilon=0.700
+2025-04-29 22:56:05 INFO     Running epsilon-greedy with epsilon=0.710
+2025-04-29 22:56:20 INFO     Running epsilon-greedy with epsilon=0.720
+2025-04-29 22:56:36 INFO     Running epsilon-greedy with epsilon=0.730
+2025-04-29 22:56:51 INFO     Running epsilon-greedy with epsilon=0.740
+2025-04-29 22:57:05 INFO     Running epsilon-greedy with epsilon=0.750
+2025-04-29 22:57:21 INFO     Running epsilon-greedy with epsilon=0.760
+2025-04-29 22:57:36 INFO     Running epsilon-greedy with epsilon=0.770
+2025-04-29 22:57:52 INFO     Running epsilon-greedy with epsilon=0.780
+2025-04-29 22:58:08 INFO     Running epsilon-greedy with epsilon=0.790
+2025-04-29 22:58:24 INFO     Running epsilon-greedy with epsilon=0.800
+2025-04-29 22:58:39 INFO     Running epsilon-greedy with epsilon=0.810
+2025-04-29 22:58:54 INFO     Running epsilon-greedy with epsilon=0.820
+2025-04-29 22:59:09 INFO     Running epsilon-greedy with epsilon=0.830
+2025-04-29 22:59:26 INFO     Running epsilon-greedy with epsilon=0.840
+2025-04-29 22:59:41 INFO     Running epsilon-greedy with epsilon=0.850
+2025-04-29 22:59:57 INFO     Running epsilon-greedy with epsilon=0.860
+2025-04-29 23:00:13 INFO     Running epsilon-greedy with epsilon=0.870
+2025-04-29 23:00:28 INFO     Running epsilon-greedy with epsilon=0.880
+2025-04-29 23:00:45 INFO     Running epsilon-greedy with epsilon=0.890
+2025-04-29 23:01:00 INFO     Running epsilon-greedy with epsilon=0.900
+2025-04-29 23:01:16 INFO     Running epsilon-greedy with epsilon=0.910
+2025-04-29 23:01:32 INFO     Running epsilon-greedy with epsilon=0.920
+2025-04-29 23:01:48 INFO     Running epsilon-greedy with epsilon=0.930
+2025-04-29 23:02:03 INFO     Running epsilon-greedy with epsilon=0.940
+2025-04-29 23:02:19 INFO     Running epsilon-greedy with epsilon=0.950
+2025-04-29 23:02:33 INFO     Running epsilon-greedy with epsilon=0.960
+2025-04-29 23:02:49 INFO     Running epsilon-greedy with epsilon=0.970
+2025-04-29 23:03:04 INFO     Running epsilon-greedy with epsilon=0.980
+2025-04-29 23:03:20 INFO     Running epsilon-greedy with epsilon=0.990
+2025-04-29 23:03:35 INFO     Evaluating predictions for epsilon=0.000
+2025-04-29 23:03:36 INFO     Epsilon=0.000, IPS=33.9504, SNIPS=37.2624
+2025-04-29 23:03:36 INFO     Evaluating predictions for epsilon=0.010
+2025-04-29 23:03:37 INFO     Epsilon=0.010, IPS=33.9504, SNIPS=37.2812
+2025-04-29 23:03:37 INFO     Evaluating predictions for epsilon=0.020
+2025-04-29 23:03:38 INFO     Epsilon=0.020, IPS=33.8715, SNIPS=37.1621
+2025-04-29 23:03:38 INFO     Evaluating predictions for epsilon=0.030
+2025-04-29 23:03:39 INFO     Epsilon=0.030, IPS=33.8874, SNIPS=37.0091
+2025-04-29 23:03:39 INFO     Evaluating predictions for epsilon=0.040
+2025-04-29 23:03:40 INFO     Epsilon=0.040, IPS=33.9759, SNIPS=37.2645
+2025-04-29 23:03:40 INFO     Evaluating predictions for epsilon=0.050
+2025-04-29 23:03:40 INFO     Epsilon=0.050, IPS=33.9711, SNIPS=36.6283
+2025-04-29 23:03:40 INFO     Evaluating predictions for epsilon=0.060
+2025-04-29 23:03:41 INFO     Epsilon=0.060, IPS=33.8649, SNIPS=37.0798
+2025-04-29 23:03:41 INFO     Evaluating predictions for epsilon=0.070
+2025-04-29 23:03:42 INFO     Epsilon=0.070, IPS=33.9559, SNIPS=36.8820
+2025-04-29 23:03:42 INFO     Evaluating predictions for epsilon=0.080
+2025-04-29 23:03:43 INFO     Epsilon=0.080, IPS=33.8815, SNIPS=36.6716
+2025-04-29 23:03:43 INFO     Evaluating predictions for epsilon=0.090
+2025-04-29 23:03:44 INFO     Epsilon=0.090, IPS=33.6067, SNIPS=36.2511
+2025-04-29 23:03:44 INFO     Evaluating predictions for epsilon=0.100
+2025-04-29 23:03:44 INFO     Epsilon=0.100, IPS=33.9629, SNIPS=37.3734
+2025-04-29 23:03:44 INFO     Evaluating predictions for epsilon=0.110
+2025-04-29 23:03:45 INFO     Epsilon=0.110, IPS=34.8929, SNIPS=38.5279
+2025-04-29 23:03:45 INFO     Evaluating predictions for epsilon=0.120
+2025-04-29 23:03:46 INFO     Epsilon=0.120, IPS=33.6231, SNIPS=37.0149
+2025-04-29 23:03:46 INFO     Evaluating predictions for epsilon=0.130
+2025-04-29 23:03:47 INFO     Epsilon=0.130, IPS=34.4254, SNIPS=38.0013
+2025-04-29 23:03:47 INFO     Evaluating predictions for epsilon=0.140
+2025-04-29 23:03:48 INFO     Epsilon=0.140, IPS=33.8123, SNIPS=37.2991
+2025-04-29 23:03:48 INFO     Evaluating predictions for epsilon=0.150
+2025-04-29 23:03:49 INFO     Epsilon=0.150, IPS=33.4107, SNIPS=36.7708
+2025-04-29 23:03:49 INFO     Evaluating predictions for epsilon=0.160
+2025-04-29 23:03:51 INFO     Epsilon=0.160, IPS=35.2697, SNIPS=38.9613
+2025-04-29 23:03:51 INFO     Evaluating predictions for epsilon=0.170
+2025-04-29 23:03:52 INFO     Epsilon=0.170, IPS=34.0477, SNIPS=38.2214
+2025-04-29 23:03:52 INFO     Evaluating predictions for epsilon=0.180
+2025-04-29 23:03:53 INFO     Epsilon=0.180, IPS=32.7134, SNIPS=35.8029
+2025-04-29 23:03:53 INFO     Evaluating predictions for epsilon=0.190
+2025-04-29 23:03:54 INFO     Epsilon=0.190, IPS=33.7329, SNIPS=36.6532
+2025-04-29 23:03:54 INFO     Evaluating predictions for epsilon=0.200
+2025-04-29 23:03:55 INFO     Epsilon=0.200, IPS=32.7846, SNIPS=35.8921
+2025-04-29 23:03:55 INFO     Evaluating predictions for epsilon=0.210
+2025-04-29 23:03:55 INFO     Epsilon=0.210, IPS=32.8293, SNIPS=35.9822
+2025-04-29 23:03:55 INFO     Evaluating predictions for epsilon=0.220
+2025-04-29 23:03:56 INFO     Epsilon=0.220, IPS=33.7094, SNIPS=37.1659
+2025-04-29 23:03:56 INFO     Evaluating predictions for epsilon=0.230
+2025-04-29 23:03:57 INFO     Epsilon=0.230, IPS=33.6455, SNIPS=36.5679
+2025-04-29 23:03:57 INFO     Evaluating predictions for epsilon=0.240
+2025-04-29 23:03:58 INFO     Epsilon=0.240, IPS=34.1028, SNIPS=37.6332
+2025-04-29 23:03:58 INFO     Evaluating predictions for epsilon=0.250
+2025-04-29 23:03:59 INFO     Epsilon=0.250, IPS=33.8681, SNIPS=33.7920
+2025-04-29 23:03:59 INFO     Evaluating predictions for epsilon=0.260
+2025-04-29 23:04:00 INFO     Epsilon=0.260, IPS=32.2139, SNIPS=35.9425
+2025-04-29 23:04:00 INFO     Evaluating predictions for epsilon=0.270
+2025-04-29 23:04:00 INFO     Epsilon=0.270, IPS=33.5933, SNIPS=37.6208
+2025-04-29 23:04:00 INFO     Evaluating predictions for epsilon=0.280
+2025-04-29 23:04:01 INFO     Epsilon=0.280, IPS=33.6793, SNIPS=37.7940
+2025-04-29 23:04:01 INFO     Evaluating predictions for epsilon=0.290
+2025-04-29 23:04:02 INFO     Epsilon=0.290, IPS=33.8515, SNIPS=37.8747
+2025-04-29 23:04:02 INFO     Evaluating predictions for epsilon=0.300
+2025-04-29 23:04:03 INFO     Epsilon=0.300, IPS=33.6419, SNIPS=36.6808
+2025-04-29 23:04:03 INFO     Evaluating predictions for epsilon=0.310
+2025-04-29 23:04:04 INFO     Epsilon=0.310, IPS=32.9023, SNIPS=32.5823
+2025-04-29 23:04:04 INFO     Evaluating predictions for epsilon=0.320
+2025-04-29 23:04:04 INFO     Epsilon=0.320, IPS=33.1337, SNIPS=36.9702
+2025-04-29 23:04:04 INFO     Evaluating predictions for epsilon=0.330
+2025-04-29 23:04:05 INFO     Epsilon=0.330, IPS=33.2149, SNIPS=36.4855
+2025-04-29 23:04:05 INFO     Evaluating predictions for epsilon=0.340
+2025-04-29 23:04:06 INFO     Epsilon=0.340, IPS=31.8554, SNIPS=35.0645
+2025-04-29 23:04:06 INFO     Evaluating predictions for epsilon=0.350
+2025-04-29 23:04:07 INFO     Epsilon=0.350, IPS=32.9125, SNIPS=36.4177
+2025-04-29 23:04:07 INFO     Evaluating predictions for epsilon=0.360
+2025-04-29 23:04:08 INFO     Epsilon=0.360, IPS=35.1505, SNIPS=38.2886
+2025-04-29 23:04:08 INFO     Evaluating predictions for epsilon=0.370
+2025-04-29 23:04:08 INFO     Epsilon=0.370, IPS=34.7395, SNIPS=37.9283
+2025-04-29 23:04:08 INFO     Evaluating predictions for epsilon=0.380
+2025-04-29 23:04:09 INFO     Epsilon=0.380, IPS=36.4799, SNIPS=40.3560
+2025-04-29 23:04:09 INFO     Evaluating predictions for epsilon=0.390
+2025-04-29 23:04:10 INFO     Epsilon=0.390, IPS=32.9070, SNIPS=36.6644
+2025-04-29 23:04:10 INFO     Evaluating predictions for epsilon=0.400
+2025-04-29 23:04:11 INFO     Epsilon=0.400, IPS=35.3664, SNIPS=39.6418
+2025-04-29 23:04:11 INFO     Evaluating predictions for epsilon=0.410
+2025-04-29 23:04:11 INFO     Epsilon=0.410, IPS=34.1756, SNIPS=38.0620
+2025-04-29 23:04:11 INFO     Evaluating predictions for epsilon=0.420
+2025-04-29 23:04:12 INFO     Epsilon=0.420, IPS=32.8030, SNIPS=37.0230
+2025-04-29 23:04:12 INFO     Evaluating predictions for epsilon=0.430
+2025-04-29 23:04:13 INFO     Epsilon=0.430, IPS=32.6804, SNIPS=35.5412
+2025-04-29 23:04:13 INFO     Evaluating predictions for epsilon=0.440
+2025-04-29 23:04:14 INFO     Epsilon=0.440, IPS=33.0817, SNIPS=33.9125
+2025-04-29 23:04:14 INFO     Evaluating predictions for epsilon=0.450
+2025-04-29 23:04:15 INFO     Epsilon=0.450, IPS=34.6979, SNIPS=38.8570
+2025-04-29 23:04:15 INFO     Evaluating predictions for epsilon=0.460
+2025-04-29 23:04:15 INFO     Epsilon=0.460, IPS=34.7289, SNIPS=36.8354
+2025-04-29 23:04:15 INFO     Evaluating predictions for epsilon=0.470
+2025-04-29 23:04:16 INFO     Epsilon=0.470, IPS=35.4351, SNIPS=34.5122
+2025-04-29 23:04:16 INFO     Evaluating predictions for epsilon=0.480
+2025-04-29 23:04:17 INFO     Epsilon=0.480, IPS=34.3603, SNIPS=35.1183
+2025-04-29 23:04:17 INFO     Evaluating predictions for epsilon=0.490
+2025-04-29 23:04:18 INFO     Epsilon=0.490, IPS=35.2999, SNIPS=38.3044
+2025-04-29 23:04:18 INFO     Evaluating predictions for epsilon=0.500
+2025-04-29 23:04:19 INFO     Epsilon=0.500, IPS=36.1038, SNIPS=39.7946
+2025-04-29 23:04:19 INFO     Evaluating predictions for epsilon=0.510
+2025-04-29 23:04:19 INFO     Epsilon=0.510, IPS=34.2123, SNIPS=37.8595
+2025-04-29 23:04:19 INFO     Evaluating predictions for epsilon=0.520
+2025-04-29 23:04:20 INFO     Epsilon=0.520, IPS=34.9282, SNIPS=38.0326
+2025-04-29 23:04:20 INFO     Evaluating predictions for epsilon=0.530
+2025-04-29 23:04:21 INFO     Epsilon=0.530, IPS=34.3049, SNIPS=37.8775
+2025-04-29 23:04:21 INFO     Evaluating predictions for epsilon=0.540
+2025-04-29 23:04:22 INFO     Epsilon=0.540, IPS=33.9998, SNIPS=38.1835
+2025-04-29 23:04:22 INFO     Evaluating predictions for epsilon=0.550
+2025-04-29 23:04:23 INFO     Epsilon=0.550, IPS=34.0690, SNIPS=37.7552
+2025-04-29 23:04:23 INFO     Evaluating predictions for epsilon=0.560
+2025-04-29 23:04:26 INFO     Epsilon=0.560, IPS=35.0608, SNIPS=38.3335
+2025-04-29 23:04:26 INFO     Evaluating predictions for epsilon=0.570
+2025-04-29 23:04:27 INFO     Epsilon=0.570, IPS=33.8363, SNIPS=37.2033
+2025-04-29 23:04:27 INFO     Evaluating predictions for epsilon=0.580
+2025-04-29 23:04:28 INFO     Epsilon=0.580, IPS=34.1893, SNIPS=38.0928
+2025-04-29 23:04:28 INFO     Evaluating predictions for epsilon=0.590
+2025-04-29 23:04:29 INFO     Epsilon=0.590, IPS=36.0102, SNIPS=39.8124
+2025-04-29 23:04:29 INFO     Evaluating predictions for epsilon=0.600
+2025-04-29 23:04:30 INFO     Epsilon=0.600, IPS=33.7643, SNIPS=36.6142
+2025-04-29 23:04:30 INFO     Evaluating predictions for epsilon=0.610
+2025-04-29 23:04:31 INFO     Epsilon=0.610, IPS=34.1323, SNIPS=37.9362
+2025-04-29 23:04:31 INFO     Evaluating predictions for epsilon=0.620
+2025-04-29 23:04:32 INFO     Epsilon=0.620, IPS=32.1400, SNIPS=35.6426
+2025-04-29 23:04:32 INFO     Evaluating predictions for epsilon=0.630
+2025-04-29 23:04:33 INFO     Epsilon=0.630, IPS=31.8389, SNIPS=34.1278
+2025-04-29 23:04:33 INFO     Evaluating predictions for epsilon=0.640
+2025-04-29 23:04:34 INFO     Epsilon=0.640, IPS=31.6002, SNIPS=35.6956
+2025-04-29 23:04:34 INFO     Evaluating predictions for epsilon=0.650
+2025-04-29 23:04:35 INFO     Epsilon=0.650, IPS=31.9877, SNIPS=35.8473
+2025-04-29 23:04:35 INFO     Evaluating predictions for epsilon=0.660
+2025-04-29 23:04:36 INFO     Epsilon=0.660, IPS=34.3136, SNIPS=35.8189
+2025-04-29 23:04:36 INFO     Evaluating predictions for epsilon=0.670
+2025-04-29 23:04:37 INFO     Epsilon=0.670, IPS=31.6699, SNIPS=35.0167
+2025-04-29 23:04:37 INFO     Evaluating predictions for epsilon=0.680
+2025-04-29 23:04:38 INFO     Epsilon=0.680, IPS=34.0439, SNIPS=38.6414
+2025-04-29 23:04:38 INFO     Evaluating predictions for epsilon=0.690
+2025-04-29 23:04:39 INFO     Epsilon=0.690, IPS=32.8838, SNIPS=35.8221
+2025-04-29 23:04:39 INFO     Evaluating predictions for epsilon=0.700
+2025-04-29 23:04:40 INFO     Epsilon=0.700, IPS=34.7856, SNIPS=38.3894
+2025-04-29 23:04:40 INFO     Evaluating predictions for epsilon=0.710
+2025-04-29 23:04:41 INFO     Epsilon=0.710, IPS=33.2392, SNIPS=37.8152
+2025-04-29 23:04:41 INFO     Evaluating predictions for epsilon=0.720
+2025-04-29 23:04:41 INFO     Epsilon=0.720, IPS=32.1012, SNIPS=35.7606
+2025-04-29 23:04:41 INFO     Evaluating predictions for epsilon=0.730
+2025-04-29 23:04:42 INFO     Epsilon=0.730, IPS=31.5910, SNIPS=34.5132
+2025-04-29 23:04:42 INFO     Evaluating predictions for epsilon=0.740
+2025-04-29 23:04:43 INFO     Epsilon=0.740, IPS=32.3987, SNIPS=36.2702
+2025-04-29 23:04:43 INFO     Evaluating predictions for epsilon=0.750
+2025-04-29 23:04:44 INFO     Epsilon=0.750, IPS=35.3816, SNIPS=34.9084
+2025-04-29 23:04:44 INFO     Evaluating predictions for epsilon=0.760
+2025-04-29 23:04:45 INFO     Epsilon=0.760, IPS=38.7813, SNIPS=42.7787
+2025-04-29 23:04:45 INFO     Evaluating predictions for epsilon=0.770
+2025-04-29 23:04:46 INFO     Epsilon=0.770, IPS=36.5384, SNIPS=41.1943
+2025-04-29 23:04:46 INFO     Evaluating predictions for epsilon=0.780
+2025-04-29 23:04:47 INFO     Epsilon=0.780, IPS=35.5546, SNIPS=39.6152
+2025-04-29 23:04:47 INFO     Evaluating predictions for epsilon=0.790
+2025-04-29 23:04:48 INFO     Epsilon=0.790, IPS=32.5053, SNIPS=36.0393
+2025-04-29 23:04:48 INFO     Evaluating predictions for epsilon=0.800
+2025-04-29 23:04:48 INFO     Epsilon=0.800, IPS=33.6803, SNIPS=37.3997
+2025-04-29 23:04:48 INFO     Evaluating predictions for epsilon=0.810
+2025-04-29 23:04:49 INFO     Epsilon=0.810, IPS=33.7430, SNIPS=37.7514
+2025-04-29 23:04:49 INFO     Evaluating predictions for epsilon=0.820
+2025-04-29 23:04:50 INFO     Epsilon=0.820, IPS=32.5506, SNIPS=35.9536
+2025-04-29 23:04:50 INFO     Evaluating predictions for epsilon=0.830
+2025-04-29 23:04:51 INFO     Epsilon=0.830, IPS=31.8504, SNIPS=35.7713
+2025-04-29 23:04:51 INFO     Evaluating predictions for epsilon=0.840
+2025-04-29 23:04:52 INFO     Epsilon=0.840, IPS=36.5452, SNIPS=40.5583
+2025-04-29 23:04:52 INFO     Evaluating predictions for epsilon=0.850
+2025-04-29 23:04:53 INFO     Epsilon=0.850, IPS=39.9285, SNIPS=44.2464
+2025-04-29 23:04:53 INFO     Evaluating predictions for epsilon=0.860
+2025-04-29 23:04:54 INFO     Epsilon=0.860, IPS=33.2000, SNIPS=35.8188
+2025-04-29 23:04:54 INFO     Evaluating predictions for epsilon=0.870
+2025-04-29 23:04:55 INFO     Epsilon=0.870, IPS=31.5735, SNIPS=32.2411
+2025-04-29 23:04:55 INFO     Evaluating predictions for epsilon=0.880
+2025-04-29 23:04:56 INFO     Epsilon=0.880, IPS=36.6958, SNIPS=38.5412
+2025-04-29 23:04:56 INFO     Evaluating predictions for epsilon=0.890
+2025-04-29 23:04:58 INFO     Epsilon=0.890, IPS=33.5309, SNIPS=36.0030
+2025-04-29 23:04:58 INFO     Evaluating predictions for epsilon=0.900
+2025-04-29 23:04:59 INFO     Epsilon=0.900, IPS=31.5776, SNIPS=33.1808
+2025-04-29 23:04:59 INFO     Evaluating predictions for epsilon=0.910
+2025-04-29 23:05:00 INFO     Epsilon=0.910, IPS=37.9752, SNIPS=40.8336
+2025-04-29 23:05:00 INFO     Evaluating predictions for epsilon=0.920
+2025-04-29 23:05:00 INFO     Epsilon=0.920, IPS=35.8536, SNIPS=35.7230
+2025-04-29 23:05:00 INFO     Evaluating predictions for epsilon=0.930
+2025-04-29 23:05:01 INFO     Epsilon=0.930, IPS=37.5466, SNIPS=38.5912
+2025-04-29 23:05:01 INFO     Evaluating predictions for epsilon=0.940
+2025-04-29 23:05:02 INFO     Epsilon=0.940, IPS=32.5737, SNIPS=35.4046
+2025-04-29 23:05:02 INFO     Evaluating predictions for epsilon=0.950
+2025-04-29 23:05:03 INFO     Epsilon=0.950, IPS=30.5706, SNIPS=34.1624
+2025-04-29 23:05:03 INFO     Evaluating predictions for epsilon=0.960
+2025-04-29 23:05:04 INFO     Epsilon=0.960, IPS=31.9542, SNIPS=34.0745
+2025-04-29 23:05:04 INFO     Evaluating predictions for epsilon=0.970
+2025-04-29 23:05:05 INFO     Epsilon=0.970, IPS=35.4264, SNIPS=37.3208
+2025-04-29 23:05:05 INFO     Evaluating predictions for epsilon=0.980
+2025-04-29 23:05:06 INFO     Epsilon=0.980, IPS=31.5622, SNIPS=33.9549
+2025-04-29 23:05:06 INFO     Evaluating predictions for epsilon=0.990
+2025-04-29 23:05:07 INFO     Epsilon=0.990, IPS=31.1952, SNIPS=34.0575
+2025-04-29 23:05:07 INFO     
+=== Epsilon Tuning Results ===
+2025-04-29 23:05:07 INFO     Best epsilon for IPS: 0.850 (IPS=39.9285)
+2025-04-29 23:05:07 INFO     Best epsilon for SNIPS: 0.850 (SNIPS=44.2464)
+2025-04-29 23:05:07 INFO     Saved results plot to results/epsilon_tuning_plot.png
+2025-04-29 23:05:07 INFO     Epsilon tuning completed

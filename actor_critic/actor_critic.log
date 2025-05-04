@@ -1,0 +1,416 @@
+2025-04-30 14:53:04 INFO     Using pre-split training data from data/train_small_80.txt
+2025-04-30 14:53:04 INFO     Using pre-split test data from data/test_small_20.txt
+2025-04-30 14:53:04 INFO     Determining maximum feature ID from training data...
+2025-04-30 14:53:06 INFO     Checking maximum feature ID from test data...
+2025-04-30 14:54:04 INFO     Using pre-split training data from data/train_small_80.txt
+2025-04-30 14:54:04 INFO     Using pre-split test data from data/test_small_20.txt
+2025-04-30 14:54:04 INFO     Determining maximum feature ID from training data...
+2025-04-30 14:54:07 INFO     Checking maximum feature ID from test data...
+2025-04-30 14:54:08 INFO     Maximum feature ID found: 73577
+2025-04-30 14:54:08 INFO     Loading training data...
+2025-04-30 14:54:10 INFO     Training impressions collected: 15955
+2025-04-30 14:54:10 INFO     Using device: cpu
+2025-04-30 14:54:12 INFO     Initialized Actor-Critic model with feature_dim=73578, hidden_dims=[128, 64]
+2025-04-30 14:54:12 INFO     Training for 3 epochs with batch size 32
+2025-04-30 14:54:14 INFO     Epoch 1, Impression 320/15955, Actor Loss: -0.0000, Critic Loss: 0.4465, Reward: 87.5062, Accuracy: 0.0500
+2025-04-30 14:54:16 INFO     Epoch 1, Impression 640/15955, Actor Loss: -0.0000, Critic Loss: 0.4587, Reward: 1.9769, Accuracy: 0.0562
+2025-04-30 14:54:19 INFO     Epoch 1, Impression 960/15955, Actor Loss: -0.0000, Critic Loss: 0.4675, Reward: 9.7354, Accuracy: 0.0469
+2025-04-30 14:54:21 INFO     Epoch 1, Impression 1280/15955, Actor Loss: -0.0000, Critic Loss: 0.2793, Reward: 2.2837, Accuracy: 0.0500
+2025-04-30 14:54:24 INFO     Epoch 1, Impression 1600/15955, Actor Loss: -0.0000, Critic Loss: 0.4831, Reward: 4.3473, Accuracy: 0.0531
+2025-04-30 14:54:26 INFO     Epoch 1, Impression 1920/15955, Actor Loss: 0.0000, Critic Loss: 0.4619, Reward: 5.0537, Accuracy: 0.0625
+2025-04-30 14:54:29 INFO     Epoch 1, Impression 2240/15955, Actor Loss: -0.0000, Critic Loss: 0.4774, Reward: 2.6372, Accuracy: 0.0375
+2025-04-30 14:54:31 INFO     Epoch 1, Impression 2560/15955, Actor Loss: -0.0000, Critic Loss: 0.3455, Reward: 1.8551, Accuracy: 0.0625
+2025-04-30 14:54:34 INFO     Epoch 1, Impression 2880/15955, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 1.9262, Accuracy: 0.0469
+2025-04-30 14:54:36 INFO     Epoch 1, Impression 3200/15955, Actor Loss: 0.0000, Critic Loss: 0.4101, Reward: 5.3077, Accuracy: 0.0656
+2025-04-30 14:54:40 INFO     Epoch 1, Impression 3520/15955, Actor Loss: 0.0000, Critic Loss: 0.2720, Reward: 3.5939, Accuracy: 0.0656
+2025-04-30 14:54:42 INFO     Epoch 1, Impression 3840/15955, Actor Loss: -0.0000, Critic Loss: 0.4601, Reward: 3.7891, Accuracy: 0.0625
+2025-04-30 14:54:45 INFO     Epoch 1, Impression 4160/15955, Actor Loss: 0.0000, Critic Loss: 0.3998, Reward: 4.7926, Accuracy: 0.0344
+2025-04-30 14:54:47 INFO     Epoch 1, Impression 4480/15955, Actor Loss: 0.0000, Critic Loss: 0.4472, Reward: 0.8046, Accuracy: 0.0312
+2025-04-30 14:54:50 INFO     Epoch 1, Impression 4800/15955, Actor Loss: 0.0000, Critic Loss: 0.4337, Reward: 3.1812, Accuracy: 0.0562
+2025-04-30 14:54:52 INFO     Epoch 1, Impression 5120/15955, Actor Loss: 0.0000, Critic Loss: 0.4469, Reward: 3.5043, Accuracy: 0.0781
+2025-04-30 14:54:55 INFO     Epoch 1, Impression 5440/15955, Actor Loss: 0.0000, Critic Loss: 0.4831, Reward: 2.5775, Accuracy: 0.0562
+2025-04-30 14:54:57 INFO     Epoch 1, Impression 5760/15955, Actor Loss: -0.0000, Critic Loss: 0.4404, Reward: 2.7471, Accuracy: 0.0469
+2025-04-30 14:55:00 INFO     Epoch 1, Impression 6080/15955, Actor Loss: -0.0000, Critic Loss: 0.4814, Reward: 7.8634, Accuracy: 0.0562
+2025-04-30 14:55:02 INFO     Epoch 1, Impression 6400/15955, Actor Loss: 0.0000, Critic Loss: 0.2377, Reward: 1.7559, Accuracy: 0.0406
+2025-04-30 14:55:05 INFO     Epoch 1, Impression 6720/15955, Actor Loss: 0.0000, Critic Loss: 0.0002, Reward: 2.8382, Accuracy: 0.0344
+2025-04-30 14:55:07 INFO     Epoch 1, Impression 7040/15955, Actor Loss: -0.0000, Critic Loss: 0.4811, Reward: 3.1426, Accuracy: 0.0562
+2025-04-30 14:55:10 INFO     Epoch 1, Impression 7360/15955, Actor Loss: 0.0000, Critic Loss: 0.4493, Reward: 3.9541, Accuracy: 0.0531
+2025-04-30 14:55:14 INFO     Epoch 1, Impression 7680/15955, Actor Loss: 0.0000, Critic Loss: 0.2881, Reward: 3.1467, Accuracy: 0.0469
+2025-04-30 14:55:18 INFO     Epoch 1, Impression 8000/15955, Actor Loss: 0.0000, Critic Loss: 0.4745, Reward: 5.0050, Accuracy: 0.0406
+2025-04-30 14:55:20 INFO     Epoch 1, Impression 8320/15955, Actor Loss: 0.0000, Critic Loss: 0.0002, Reward: 3.9252, Accuracy: 0.0531
+2025-04-30 14:55:23 INFO     Epoch 1, Impression 8640/15955, Actor Loss: 0.0000, Critic Loss: 0.2861, Reward: 7.8052, Accuracy: 0.0531
+2025-04-30 14:55:26 INFO     Epoch 1, Impression 8960/15955, Actor Loss: -0.0000, Critic Loss: 0.4599, Reward: 2.3315, Accuracy: 0.0594
+2025-04-30 14:55:29 INFO     Epoch 1, Impression 9280/15955, Actor Loss: -0.0000, Critic Loss: 0.3173, Reward: 2.0347, Accuracy: 0.0469
+2025-04-30 14:55:31 INFO     Epoch 1, Impression 9600/15955, Actor Loss: -0.0000, Critic Loss: 0.0005, Reward: 2.2249, Accuracy: 0.0406
+2025-04-30 14:55:34 INFO     Epoch 1, Impression 9920/15955, Actor Loss: -0.0000, Critic Loss: 0.0003, Reward: 2.3853, Accuracy: 0.0437
+2025-04-30 14:55:37 INFO     Epoch 1, Impression 10240/15955, Actor Loss: 0.0000, Critic Loss: 0.4828, Reward: 3.3147, Accuracy: 0.0375
+2025-04-30 14:55:40 INFO     Epoch 1, Impression 10560/15955, Actor Loss: 0.0000, Critic Loss: 0.4247, Reward: 1.9438, Accuracy: 0.0437
+2025-04-30 14:55:43 INFO     Epoch 1, Impression 10880/15955, Actor Loss: 0.0000, Critic Loss: 0.4419, Reward: 1.2483, Accuracy: 0.0437
+2025-04-30 14:55:46 INFO     Epoch 1, Impression 11200/15955, Actor Loss: 0.0000, Critic Loss: 0.4853, Reward: 5.2805, Accuracy: 0.0781
+2025-04-30 14:55:49 INFO     Epoch 1, Impression 11520/15955, Actor Loss: 0.0000, Critic Loss: 0.4383, Reward: 5.2349, Accuracy: 0.0625
+2025-04-30 14:55:52 INFO     Epoch 1, Impression 11840/15955, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 1.5744, Accuracy: 0.0375
+2025-04-30 14:55:55 INFO     Epoch 1, Impression 12160/15955, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 5.5183, Accuracy: 0.0719
+2025-04-30 14:55:57 INFO     Epoch 1, Impression 12480/15955, Actor Loss: -0.0000, Critic Loss: 0.3728, Reward: 5.2282, Accuracy: 0.0594
+2025-04-30 14:56:00 INFO     Epoch 1, Impression 12800/15955, Actor Loss: -0.0000, Critic Loss: 0.4544, Reward: 5.0922, Accuracy: 0.0719
+2025-04-30 14:56:02 INFO     Epoch 1, Impression 13120/15955, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 0.9732, Accuracy: 0.0344
+2025-04-30 14:56:05 INFO     Epoch 1, Impression 13440/15955, Actor Loss: -0.0000, Critic Loss: 0.0005, Reward: 4.7985, Accuracy: 0.0500
+2025-04-30 14:56:08 INFO     Epoch 1, Impression 13760/15955, Actor Loss: -0.0000, Critic Loss: 0.4239, Reward: 4.1516, Accuracy: 0.0531
+2025-04-30 14:56:10 INFO     Epoch 1, Impression 14080/15955, Actor Loss: -0.0000, Critic Loss: 0.0007, Reward: 2.3129, Accuracy: 0.0437
+2025-04-30 14:56:13 INFO     Epoch 1, Impression 14400/15955, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 5.2006, Accuracy: 0.0500
+2025-04-30 14:56:16 INFO     Epoch 1, Impression 14720/15955, Actor Loss: -0.0000, Critic Loss: 0.3783, Reward: 7.2547, Accuracy: 0.0375
+2025-04-30 14:56:20 INFO     Epoch 1, Impression 15040/15955, Actor Loss: -0.0000, Critic Loss: 0.4514, Reward: 2.3242, Accuracy: 0.0531
+2025-04-30 14:56:23 INFO     Epoch 1, Impression 15360/15955, Actor Loss: 0.0000, Critic Loss: 0.0000, Reward: 2.3212, Accuracy: 0.0437
+2025-04-30 14:56:26 INFO     Epoch 1, Impression 15680/15955, Actor Loss: 0.0000, Critic Loss: 0.4668, Reward: 5.3179, Accuracy: 0.0594
+2025-04-30 14:56:28 INFO     Completed epoch 1/3
+2025-04-30 14:56:31 INFO     Epoch 2, Impression 320/15955, Actor Loss: 0.0000, Critic Loss: 0.4157, Reward: 3.7822, Accuracy: 0.0406
+2025-04-30 14:56:33 INFO     Epoch 2, Impression 640/15955, Actor Loss: -0.0000, Critic Loss: 0.4385, Reward: 9.4351, Accuracy: 0.0875
+2025-04-30 14:56:36 INFO     Epoch 2, Impression 960/15955, Actor Loss: -0.0000, Critic Loss: 0.0009, Reward: 3.5337, Accuracy: 0.0406
+2025-04-30 14:56:39 INFO     Epoch 2, Impression 1280/15955, Actor Loss: -0.0000, Critic Loss: 0.3853, Reward: 1.6147, Accuracy: 0.0594
+2025-04-30 14:56:41 INFO     Epoch 2, Impression 1600/15955, Actor Loss: -0.0000, Critic Loss: 0.4825, Reward: 8.2466, Accuracy: 0.0812
+2025-04-30 14:56:44 INFO     Epoch 2, Impression 1920/15955, Actor Loss: -0.0000, Critic Loss: 0.4859, Reward: 2.2294, Accuracy: 0.0531
+2025-04-30 14:56:47 INFO     Epoch 2, Impression 2240/15955, Actor Loss: -0.0000, Critic Loss: 0.4618, Reward: 4.3138, Accuracy: 0.0750
+2025-04-30 14:56:50 INFO     Epoch 2, Impression 2560/15955, Actor Loss: 0.0000, Critic Loss: 0.0002, Reward: 3.1279, Accuracy: 0.0375
+2025-04-30 14:56:54 INFO     Epoch 2, Impression 2880/15955, Actor Loss: 0.0000, Critic Loss: 0.2877, Reward: 1.1178, Accuracy: 0.0500
+2025-04-30 14:56:56 INFO     Epoch 2, Impression 3200/15955, Actor Loss: -0.0000, Critic Loss: 0.4511, Reward: 2.3545, Accuracy: 0.0437
+2025-04-30 14:56:59 INFO     Epoch 2, Impression 3520/15955, Actor Loss: -0.0000, Critic Loss: 0.3955, Reward: 5.4659, Accuracy: 0.0469
+2025-04-30 14:57:02 INFO     Epoch 2, Impression 3840/15955, Actor Loss: -0.0000, Critic Loss: 0.4736, Reward: 8.6852, Accuracy: 0.0406
+2025-04-30 14:57:04 INFO     Epoch 2, Impression 4160/15955, Actor Loss: -0.0000, Critic Loss: 0.4454, Reward: 3.3764, Accuracy: 0.0562
+2025-04-30 14:57:07 INFO     Epoch 2, Impression 4480/15955, Actor Loss: 0.0000, Critic Loss: 0.4129, Reward: 5.1874, Accuracy: 0.0625
+2025-04-30 14:57:10 INFO     Epoch 2, Impression 4800/15955, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 2.1146, Accuracy: 0.0500
+2025-04-30 14:57:13 INFO     Epoch 2, Impression 5120/15955, Actor Loss: 0.0000, Critic Loss: 0.4695, Reward: 1.5728, Accuracy: 0.0500
+2025-04-30 14:57:15 INFO     Epoch 2, Impression 5440/15955, Actor Loss: 0.0000, Critic Loss: 0.4508, Reward: 5.4567, Accuracy: 0.0375
+2025-04-30 14:57:18 INFO     Epoch 2, Impression 5760/15955, Actor Loss: 0.0000, Critic Loss: 0.4523, Reward: 5.5149, Accuracy: 0.0469
+2025-04-30 14:57:21 INFO     Epoch 2, Impression 6080/15955, Actor Loss: -0.0000, Critic Loss: 0.3686, Reward: 1.9347, Accuracy: 0.0437
+2025-04-30 14:57:23 INFO     Epoch 2, Impression 6400/15955, Actor Loss: -0.0000, Critic Loss: 0.4461, Reward: 3.3471, Accuracy: 0.0625
+2025-04-30 14:57:28 INFO     Epoch 2, Impression 6720/15955, Actor Loss: -0.0000, Critic Loss: 0.0007, Reward: 2.5121, Accuracy: 0.0375
+2025-04-30 14:57:30 INFO     Epoch 2, Impression 7040/15955, Actor Loss: -0.0000, Critic Loss: 0.0003, Reward: 2.7094, Accuracy: 0.0500
+2025-04-30 14:57:33 INFO     Epoch 2, Impression 7360/15955, Actor Loss: 0.0000, Critic Loss: 0.4142, Reward: 3.9790, Accuracy: 0.0500
+2025-04-30 14:57:36 INFO     Epoch 2, Impression 7680/15955, Actor Loss: 0.0000, Critic Loss: 0.3433, Reward: 4.8048, Accuracy: 0.0531
+2025-04-30 14:57:39 INFO     Epoch 2, Impression 8000/15955, Actor Loss: 0.0000, Critic Loss: 0.3847, Reward: 4.4564, Accuracy: 0.0500
+2025-04-30 14:57:41 INFO     Epoch 2, Impression 8320/15955, Actor Loss: 0.0000, Critic Loss: 0.3553, Reward: 2.4596, Accuracy: 0.0469
+2025-04-30 14:57:44 INFO     Epoch 2, Impression 8640/15955, Actor Loss: -0.0000, Critic Loss: 0.3972, Reward: 4.5191, Accuracy: 0.0531
+2025-04-30 14:57:47 INFO     Epoch 2, Impression 8960/15955, Actor Loss: -0.0000, Critic Loss: 0.3371, Reward: 4.9583, Accuracy: 0.0594
+2025-04-30 14:57:50 INFO     Epoch 2, Impression 9280/15955, Actor Loss: 0.0000, Critic Loss: 0.3859, Reward: 82.9499, Accuracy: 0.0437
+2025-04-30 14:57:52 INFO     Epoch 2, Impression 9600/15955, Actor Loss: 0.0000, Critic Loss: 0.3029, Reward: 1.2349, Accuracy: 0.0344
+2025-04-30 14:57:55 INFO     Epoch 2, Impression 9920/15955, Actor Loss: 0.0000, Critic Loss: 0.4504, Reward: 6.2855, Accuracy: 0.0562
+2025-04-30 14:57:58 INFO     Epoch 2, Impression 10240/15955, Actor Loss: 0.0000, Critic Loss: 0.4180, Reward: 6.9545, Accuracy: 0.0562
+2025-04-30 14:58:02 INFO     Epoch 2, Impression 10560/15955, Actor Loss: 0.0000, Critic Loss: 0.3986, Reward: 3.7174, Accuracy: 0.0656
+2025-04-30 14:58:04 INFO     Epoch 2, Impression 10880/15955, Actor Loss: 0.0000, Critic Loss: 0.3539, Reward: 5.0649, Accuracy: 0.0656
+2025-04-30 14:58:07 INFO     Epoch 2, Impression 11200/15955, Actor Loss: 0.0000, Critic Loss: 0.4437, Reward: 1.7265, Accuracy: 0.0562
+2025-04-30 14:58:10 INFO     Epoch 2, Impression 11520/15955, Actor Loss: -0.0000, Critic Loss: 0.4583, Reward: 3.2404, Accuracy: 0.0562
+2025-04-30 14:58:13 INFO     Epoch 2, Impression 11840/15955, Actor Loss: -0.0000, Critic Loss: 0.2587, Reward: 4.8344, Accuracy: 0.0500
+2025-04-30 14:58:16 INFO     Epoch 2, Impression 12160/15955, Actor Loss: -0.0000, Critic Loss: 0.4247, Reward: 1.6381, Accuracy: 0.0344
+2025-04-30 14:58:19 INFO     Epoch 2, Impression 12480/15955, Actor Loss: -0.0000, Critic Loss: 0.2315, Reward: 2.9727, Accuracy: 0.0469
+2025-04-30 14:58:22 INFO     Epoch 2, Impression 12800/15955, Actor Loss: -0.0000, Critic Loss: 0.3690, Reward: 2.2963, Accuracy: 0.0469
+2025-04-30 14:58:24 INFO     Epoch 2, Impression 13120/15955, Actor Loss: -0.0000, Critic Loss: 0.4491, Reward: 1.9303, Accuracy: 0.0469
+2025-04-30 14:58:27 INFO     Epoch 2, Impression 13440/15955, Actor Loss: -0.0000, Critic Loss: 0.4788, Reward: 1.7920, Accuracy: 0.0312
+2025-04-30 14:58:30 INFO     Epoch 2, Impression 13760/15955, Actor Loss: -0.0000, Critic Loss: 0.0004, Reward: 3.9231, Accuracy: 0.0375
+2025-04-30 14:58:34 INFO     Epoch 2, Impression 14080/15955, Actor Loss: -0.0000, Critic Loss: 0.3752, Reward: 1.2564, Accuracy: 0.0375
+2025-04-30 14:58:37 INFO     Epoch 2, Impression 14400/15955, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 4.0767, Accuracy: 0.0531
+2025-04-30 14:58:40 INFO     Epoch 2, Impression 14720/15955, Actor Loss: -0.0000, Critic Loss: 0.4772, Reward: 6.9334, Accuracy: 0.0562
+2025-04-30 14:58:43 INFO     Epoch 2, Impression 15040/15955, Actor Loss: -0.0000, Critic Loss: 0.3839, Reward: 4.2373, Accuracy: 0.0625
+2025-04-30 14:58:45 INFO     Epoch 2, Impression 15360/15955, Actor Loss: -0.0000, Critic Loss: 0.4432, Reward: 2.9681, Accuracy: 0.0750
+2025-04-30 14:58:48 INFO     Epoch 2, Impression 15680/15955, Actor Loss: 0.0000, Critic Loss: 0.4842, Reward: 1.7701, Accuracy: 0.0375
+2025-04-30 14:58:50 INFO     Completed epoch 2/3
+2025-04-30 14:58:53 INFO     Epoch 3, Impression 320/15955, Actor Loss: 0.0000, Critic Loss: 0.3824, Reward: 2.9401, Accuracy: 0.0437
+2025-04-30 14:58:56 INFO     Epoch 3, Impression 640/15955, Actor Loss: 0.0000, Critic Loss: 0.4304, Reward: 4.3114, Accuracy: 0.0562
+2025-04-30 14:58:58 INFO     Epoch 3, Impression 960/15955, Actor Loss: 0.0000, Critic Loss: 0.4012, Reward: 2.3485, Accuracy: 0.0437
+2025-04-30 14:59:01 INFO     Epoch 3, Impression 1280/15955, Actor Loss: 0.0000, Critic Loss: 0.4845, Reward: 1.7911, Accuracy: 0.0469
+2025-04-30 14:59:04 INFO     Epoch 3, Impression 1600/15955, Actor Loss: 0.0000, Critic Loss: 0.4482, Reward: 2.1004, Accuracy: 0.0469
+2025-04-30 14:59:08 INFO     Epoch 3, Impression 1920/15955, Actor Loss: 0.0000, Critic Loss: 0.4410, Reward: 2.5561, Accuracy: 0.0562
+2025-04-30 14:59:11 INFO     Epoch 3, Impression 2240/15955, Actor Loss: 0.0000, Critic Loss: 0.4615, Reward: 5.2839, Accuracy: 0.0437
+2025-04-30 14:59:13 INFO     Epoch 3, Impression 2560/15955, Actor Loss: 0.0000, Critic Loss: 0.3839, Reward: 1.1570, Accuracy: 0.0437
+2025-04-30 14:59:16 INFO     Epoch 3, Impression 2880/15955, Actor Loss: 0.0000, Critic Loss: 0.4417, Reward: 5.3325, Accuracy: 0.0594
+2025-04-30 14:59:19 INFO     Epoch 3, Impression 3200/15955, Actor Loss: 0.0000, Critic Loss: 0.4518, Reward: 4.1887, Accuracy: 0.0500
+2025-04-30 14:59:22 INFO     Epoch 3, Impression 3520/15955, Actor Loss: 0.0000, Critic Loss: 0.0000, Reward: 1.9139, Accuracy: 0.0344
+2025-04-30 14:59:25 INFO     Epoch 3, Impression 3840/15955, Actor Loss: 0.0000, Critic Loss: 0.3369, Reward: 3.4694, Accuracy: 0.0500
+2025-04-30 14:59:27 INFO     Epoch 3, Impression 4160/15955, Actor Loss: 0.0000, Critic Loss: 0.0004, Reward: 4.6234, Accuracy: 0.0750
+2025-04-30 14:59:30 INFO     Epoch 3, Impression 4480/15955, Actor Loss: 0.0000, Critic Loss: 0.4716, Reward: 2.8747, Accuracy: 0.0594
+2025-04-30 14:59:33 INFO     Epoch 3, Impression 4800/15955, Actor Loss: 0.0000, Critic Loss: 0.3056, Reward: 4.2439, Accuracy: 0.0656
+2025-04-30 14:59:36 INFO     Epoch 3, Impression 5120/15955, Actor Loss: 0.0000, Critic Loss: 0.2482, Reward: 2.2290, Accuracy: 0.0406
+2025-04-30 14:59:39 INFO     Epoch 3, Impression 5440/15955, Actor Loss: 0.0000, Critic Loss: 0.3915, Reward: 3.9741, Accuracy: 0.0750
+2025-04-30 14:59:43 INFO     Epoch 3, Impression 5760/15955, Actor Loss: 0.0000, Critic Loss: 0.0003, Reward: 2.4826, Accuracy: 0.0437
+2025-04-30 14:59:46 INFO     Epoch 3, Impression 6080/15955, Actor Loss: 0.0000, Critic Loss: 0.3867, Reward: 1.9597, Accuracy: 0.0594
+2025-04-30 14:59:48 INFO     Epoch 3, Impression 6400/15955, Actor Loss: 0.0000, Critic Loss: 0.3299, Reward: 2.4626, Accuracy: 0.0375
+2025-04-30 14:59:51 INFO     Epoch 3, Impression 6720/15955, Actor Loss: 0.0000, Critic Loss: 0.3702, Reward: 3.1089, Accuracy: 0.0687
+2025-04-30 14:59:54 INFO     Epoch 3, Impression 7040/15955, Actor Loss: 0.0000, Critic Loss: 0.4749, Reward: 5.9265, Accuracy: 0.0750
+2025-04-30 14:59:57 INFO     Epoch 3, Impression 7360/15955, Actor Loss: -0.0000, Critic Loss: 0.4426, Reward: 4.7590, Accuracy: 0.0437
+2025-04-30 15:00:00 INFO     Epoch 3, Impression 7680/15955, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 2.3147, Accuracy: 0.0375
+2025-04-30 15:00:03 INFO     Epoch 3, Impression 8000/15955, Actor Loss: -0.0000, Critic Loss: 0.0004, Reward: 2.1705, Accuracy: 0.0281
+2025-04-30 15:00:06 INFO     Epoch 3, Impression 8320/15955, Actor Loss: -0.0000, Critic Loss: 0.4569, Reward: 3.1983, Accuracy: 0.0281
+2025-04-30 15:00:09 INFO     Epoch 3, Impression 8640/15955, Actor Loss: -0.0000, Critic Loss: 0.3727, Reward: 1.5933, Accuracy: 0.0562
+2025-04-30 15:00:12 INFO     Epoch 3, Impression 8960/15955, Actor Loss: -0.0000, Critic Loss: 0.4595, Reward: 4.6726, Accuracy: 0.0406
+2025-04-30 15:00:16 INFO     Epoch 3, Impression 9280/15955, Actor Loss: -0.0000, Critic Loss: 0.4656, Reward: 1.8626, Accuracy: 0.0406
+2025-04-30 15:00:19 INFO     Epoch 3, Impression 9600/15955, Actor Loss: -0.0000, Critic Loss: 0.4727, Reward: 3.7517, Accuracy: 0.0500
+2025-04-30 15:00:22 INFO     Epoch 3, Impression 9920/15955, Actor Loss: 0.0000, Critic Loss: 0.4790, Reward: 82.9686, Accuracy: 0.0531
+2025-04-30 15:00:24 INFO     Epoch 3, Impression 10240/15955, Actor Loss: 0.0000, Critic Loss: 0.4403, Reward: 5.5833, Accuracy: 0.0719
+2025-04-30 15:00:28 INFO     Epoch 3, Impression 10560/15955, Actor Loss: 0.0000, Critic Loss: 0.4309, Reward: 2.1765, Accuracy: 0.0469
+2025-04-30 15:00:30 INFO     Epoch 3, Impression 10880/15955, Actor Loss: 0.0000, Critic Loss: 0.4773, Reward: 4.9598, Accuracy: 0.0594
+2025-04-30 15:00:33 INFO     Epoch 3, Impression 11200/15955, Actor Loss: 0.0000, Critic Loss: 0.4387, Reward: 3.1353, Accuracy: 0.0500
+2025-04-30 15:00:36 INFO     Epoch 3, Impression 11520/15955, Actor Loss: 0.0000, Critic Loss: 0.4793, Reward: 3.6456, Accuracy: 0.0500
+2025-04-30 15:00:39 INFO     Epoch 3, Impression 11840/15955, Actor Loss: 0.0000, Critic Loss: 0.4791, Reward: 4.3307, Accuracy: 0.0406
+2025-04-30 15:00:41 INFO     Epoch 3, Impression 12160/15955, Actor Loss: 0.0000, Critic Loss: 0.4524, Reward: 3.2758, Accuracy: 0.0406
+2025-04-30 15:00:44 INFO     Epoch 3, Impression 12480/15955, Actor Loss: 0.0000, Critic Loss: 0.4399, Reward: 3.9698, Accuracy: 0.0687
+2025-04-30 15:00:49 INFO     Epoch 3, Impression 12800/15955, Actor Loss: 0.0000, Critic Loss: 0.4768, Reward: 4.2301, Accuracy: 0.0656
+2025-04-30 15:00:52 INFO     Epoch 3, Impression 13120/15955, Actor Loss: 0.0000, Critic Loss: 0.4500, Reward: 5.1697, Accuracy: 0.0750
+2025-04-30 15:00:54 INFO     Epoch 3, Impression 13440/15955, Actor Loss: 0.0000, Critic Loss: 0.4868, Reward: 1.8493, Accuracy: 0.0531
+2025-04-30 15:00:57 INFO     Epoch 3, Impression 13760/15955, Actor Loss: 0.0000, Critic Loss: 0.4635, Reward: 1.9139, Accuracy: 0.0344
+2025-04-30 15:01:00 INFO     Epoch 3, Impression 14080/15955, Actor Loss: 0.0000, Critic Loss: 0.0008, Reward: 8.5933, Accuracy: 0.0656
+2025-04-30 15:01:02 INFO     Epoch 3, Impression 14400/15955, Actor Loss: 0.0000, Critic Loss: 0.4024, Reward: 5.1227, Accuracy: 0.0469
+2025-04-30 15:01:05 INFO     Epoch 3, Impression 14720/15955, Actor Loss: 0.0000, Critic Loss: 0.3283, Reward: 9.5394, Accuracy: 0.0500
+2025-04-30 15:01:07 INFO     Epoch 3, Impression 15040/15955, Actor Loss: 0.0000, Critic Loss: 0.2926, Reward: 2.7317, Accuracy: 0.0406
+2025-04-30 15:01:10 INFO     Epoch 3, Impression 15360/15955, Actor Loss: 0.0000, Critic Loss: 0.4632, Reward: 1.6346, Accuracy: 0.0500
+2025-04-30 15:01:13 INFO     Epoch 3, Impression 15680/15955, Actor Loss: 0.0000, Critic Loss: 0.3783, Reward: 8.9952, Accuracy: 0.0625
+2025-04-30 15:01:17 INFO     Completed epoch 3/3
+2025-04-30 15:01:17 INFO     Training completed. Generating predictions on test data...
+2025-04-30 15:01:23 INFO     Processed 1000 test impressions
+2025-04-30 15:01:28 INFO     Processed 2000 test impressions
+2025-04-30 15:01:32 INFO     Processed 3000 test impressions
+2025-04-30 15:01:37 INFO     Processed 4000 test impressions
+2025-04-30 15:01:37 INFO     Successfully saved predictions to data/actor_critic_predictions_on_test.txt.gz
+2025-04-30 15:01:37 INFO     To evaluate the model, run: python compute_score.py --predictions-path data/actor_critic_predictions_on_test.txt.gz --gold-labels-path data/test_small_20.txt
+2025-04-30 16:06:25 INFO     Reading impression IDs from data/criteo_train.txt
+2025-04-30 16:06:40 INFO     Reading impression IDs from data/criteo_train.txt.gz
+2025-04-30 16:08:41 INFO     Reading impression IDs from data/criteo_train.txt.gz
+2025-04-30 16:47:56 INFO     Total impressions found: 14175476
+2025-04-30 16:48:14 INFO     Split data: 11340380 training impressions, 2835096 test impressions
+2025-04-30 18:00:15 INFO     Reading impression IDs from ../epsilon_greedy/data/criteo_train.txt.gz
+2025-04-30 18:00:38 INFO     Reading impression IDs from ../epsilon_greedy/data/criteo_train_small.txt.gz
+2025-04-30 18:00:41 INFO     Total impressions found: 20000
+2025-04-30 18:00:41 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-04-30 18:00:45 INFO     Maximum feature ID found: 73577
+2025-04-30 18:00:51 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-04-30 18:00:51 INFO     Training impressions collected: 16000
+2025-04-30 18:00:54 INFO     Initialized Actor-Critic model with feature_dim=73578, hidden_dims=[128, 64]
+2025-04-30 18:00:54 INFO     Training for 3 epochs with batch size 32
+2025-04-30 18:00:57 INFO     Epoch 1, Impression 320/16000, Actor Loss: 0.0000, Critic Loss: 0.3009, Reward: 3.1038, Accuracy: 0.0281
+2025-04-30 18:01:03 INFO     Epoch 1, Impression 640/16000, Actor Loss: 0.0000, Critic Loss: 0.4866, Reward: 2.5835, Accuracy: 0.0406
+2025-04-30 18:01:07 INFO     Epoch 1, Impression 960/16000, Actor Loss: 0.0000, Critic Loss: 0.4610, Reward: 4.8616, Accuracy: 0.0562
+2025-04-30 18:01:10 INFO     Epoch 1, Impression 1280/16000, Actor Loss: -0.0000, Critic Loss: 0.3814, Reward: 4.6147, Accuracy: 0.0656
+2025-04-30 18:01:15 INFO     Epoch 1, Impression 1600/16000, Actor Loss: -0.0000, Critic Loss: 0.4643, Reward: 2.2620, Accuracy: 0.0469
+2025-04-30 18:01:19 INFO     Epoch 1, Impression 1920/16000, Actor Loss: -0.0000, Critic Loss: 0.4694, Reward: 1.5927, Accuracy: 0.0406
+2025-04-30 18:01:23 INFO     Epoch 1, Impression 2240/16000, Actor Loss: 0.0000, Critic Loss: 0.3229, Reward: 2.3278, Accuracy: 0.0531
+2025-04-30 18:01:26 INFO     Epoch 1, Impression 2560/16000, Actor Loss: -0.0000, Critic Loss: 0.0017, Reward: 5.2539, Accuracy: 0.0562
+2025-04-30 18:01:30 INFO     Epoch 1, Impression 2880/16000, Actor Loss: -0.0000, Critic Loss: 0.4825, Reward: 1.4693, Accuracy: 0.0531
+2025-04-30 18:01:36 INFO     Epoch 1, Impression 3200/16000, Actor Loss: -0.0000, Critic Loss: 0.4741, Reward: 8.0680, Accuracy: 0.0594
+2025-04-30 18:01:39 INFO     Epoch 1, Impression 3520/16000, Actor Loss: -0.0000, Critic Loss: 0.0014, Reward: 1.0933, Accuracy: 0.0406
+2025-04-30 18:01:43 INFO     Epoch 1, Impression 3840/16000, Actor Loss: 0.0000, Critic Loss: 0.3475, Reward: 4.7344, Accuracy: 0.0594
+2025-04-30 18:01:47 INFO     Epoch 1, Impression 4160/16000, Actor Loss: 0.0000, Critic Loss: 0.4676, Reward: 2.4119, Accuracy: 0.0344
+2025-04-30 18:01:51 INFO     Epoch 1, Impression 4480/16000, Actor Loss: -0.0000, Critic Loss: 0.4737, Reward: 9.7565, Accuracy: 0.0656
+2025-04-30 18:01:54 INFO     Epoch 1, Impression 4800/16000, Actor Loss: -0.0000, Critic Loss: 0.4456, Reward: 3.8538, Accuracy: 0.0406
+2025-04-30 18:01:58 INFO     Epoch 1, Impression 5120/16000, Actor Loss: -0.0000, Critic Loss: 0.4540, Reward: 3.3043, Accuracy: 0.0500
+2025-04-30 18:02:01 INFO     Epoch 1, Impression 5440/16000, Actor Loss: -0.0000, Critic Loss: 0.4058, Reward: 83.2612, Accuracy: 0.0656
+2025-04-30 18:02:05 INFO     Epoch 1, Impression 5760/16000, Actor Loss: 0.0000, Critic Loss: 0.4651, Reward: 69.4547, Accuracy: 0.0437
+2025-04-30 18:02:10 INFO     Epoch 1, Impression 6080/16000, Actor Loss: 0.0000, Critic Loss: 0.3013, Reward: 3.7952, Accuracy: 0.0344
+2025-04-30 18:02:14 INFO     Epoch 1, Impression 6400/16000, Actor Loss: 0.0000, Critic Loss: 0.0004, Reward: 1.9335, Accuracy: 0.0344
+2025-04-30 18:02:17 INFO     Epoch 1, Impression 6720/16000, Actor Loss: 0.0000, Critic Loss: 0.4383, Reward: 3.6745, Accuracy: 0.0531
+2025-04-30 18:02:21 INFO     Epoch 1, Impression 7040/16000, Actor Loss: 0.0000, Critic Loss: 0.4116, Reward: 2.7163, Accuracy: 0.0687
+2025-04-30 18:02:26 INFO     Epoch 1, Impression 7360/16000, Actor Loss: 0.0000, Critic Loss: 0.3857, Reward: 2.3819, Accuracy: 0.0437
+2025-04-30 18:02:30 INFO     Epoch 1, Impression 7680/16000, Actor Loss: -0.0000, Critic Loss: 0.4775, Reward: 5.1290, Accuracy: 0.0437
+2025-04-30 18:02:34 INFO     Epoch 1, Impression 8000/16000, Actor Loss: -0.0000, Critic Loss: 0.0074, Reward: 8.8766, Accuracy: 0.0562
+2025-04-30 18:02:38 INFO     Epoch 1, Impression 8320/16000, Actor Loss: -0.0000, Critic Loss: 0.2243, Reward: 5.3617, Accuracy: 0.0500
+2025-04-30 18:02:43 INFO     Epoch 1, Impression 8640/16000, Actor Loss: -0.0000, Critic Loss: 0.4547, Reward: 3.9696, Accuracy: 0.0625
+2025-04-30 18:02:47 INFO     Epoch 1, Impression 8960/16000, Actor Loss: 0.0000, Critic Loss: 0.4507, Reward: 6.7531, Accuracy: 0.0687
+2025-04-30 18:02:50 INFO     Epoch 1, Impression 9280/16000, Actor Loss: 0.0000, Critic Loss: 0.4681, Reward: 1.9679, Accuracy: 0.0437
+2025-04-30 18:02:54 INFO     Epoch 1, Impression 9600/16000, Actor Loss: 0.0000, Critic Loss: 0.3887, Reward: 3.6179, Accuracy: 0.0437
+2025-04-30 18:02:57 INFO     Epoch 1, Impression 9920/16000, Actor Loss: 0.0000, Critic Loss: 0.4007, Reward: 2.8229, Accuracy: 0.0656
+2025-04-30 18:03:01 INFO     Epoch 1, Impression 10240/16000, Actor Loss: 0.0000, Critic Loss: 0.4711, Reward: 5.3022, Accuracy: 0.0469
+2025-04-30 18:03:05 INFO     Epoch 1, Impression 10560/16000, Actor Loss: -0.0000, Critic Loss: 0.4131, Reward: 1.7786, Accuracy: 0.0375
+2025-04-30 18:03:09 INFO     Epoch 1, Impression 10880/16000, Actor Loss: -0.0000, Critic Loss: 0.3952, Reward: 3.0453, Accuracy: 0.0594
+2025-04-30 18:03:14 INFO     Epoch 1, Impression 11200/16000, Actor Loss: -0.0000, Critic Loss: 0.4513, Reward: 6.0065, Accuracy: 0.0437
+2025-04-30 18:03:18 INFO     Epoch 1, Impression 11520/16000, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 2.5087, Accuracy: 0.0406
+2025-04-30 18:03:22 INFO     Epoch 1, Impression 11840/16000, Actor Loss: 0.0000, Critic Loss: 0.4298, Reward: 5.1083, Accuracy: 0.0656
+2025-04-30 18:03:26 INFO     Epoch 1, Impression 12160/16000, Actor Loss: -0.0000, Critic Loss: 0.4784, Reward: 3.9059, Accuracy: 0.0750
+2025-04-30 18:03:30 INFO     Epoch 1, Impression 12480/16000, Actor Loss: -0.0000, Critic Loss: 0.0001, Reward: 3.1270, Accuracy: 0.0594
+2025-04-30 18:03:34 INFO     Epoch 1, Impression 12800/16000, Actor Loss: -0.0000, Critic Loss: 0.3643, Reward: 2.5523, Accuracy: 0.0500
+2025-04-30 18:03:38 INFO     Epoch 1, Impression 13120/16000, Actor Loss: 0.0000, Critic Loss: 0.0006, Reward: 2.4043, Accuracy: 0.0500
+2025-04-30 18:03:43 INFO     Epoch 1, Impression 13440/16000, Actor Loss: 0.0000, Critic Loss: 0.2915, Reward: 1.0594, Accuracy: 0.0469
+2025-04-30 18:03:49 INFO     Epoch 1, Impression 13760/16000, Actor Loss: 0.0000, Critic Loss: 0.4762, Reward: 6.5400, Accuracy: 0.0781
+2025-04-30 18:03:53 INFO     Epoch 1, Impression 14080/16000, Actor Loss: 0.0000, Critic Loss: 0.4443, Reward: 2.3619, Accuracy: 0.0562
+2025-04-30 18:03:58 INFO     Epoch 1, Impression 14400/16000, Actor Loss: -0.0000, Critic Loss: 0.4495, Reward: 2.1606, Accuracy: 0.0562
+2025-04-30 18:04:02 INFO     Epoch 1, Impression 14720/16000, Actor Loss: 0.0000, Critic Loss: 0.4517, Reward: 1.9843, Accuracy: 0.0719
+2025-04-30 18:04:06 INFO     Epoch 1, Impression 15040/16000, Actor Loss: 0.0000, Critic Loss: 0.4247, Reward: 3.6623, Accuracy: 0.0531
+2025-04-30 18:04:11 INFO     Epoch 1, Impression 15360/16000, Actor Loss: 0.0000, Critic Loss: 0.3590, Reward: 5.9047, Accuracy: 0.0687
+2025-04-30 18:04:15 INFO     Epoch 1, Impression 15680/16000, Actor Loss: 0.0000, Critic Loss: 0.4478, Reward: 2.7152, Accuracy: 0.0531
+2025-04-30 18:04:20 INFO     Epoch 1, Impression 16000/16000, Actor Loss: 0.0000, Critic Loss: 0.1739, Reward: 2.9417, Accuracy: 0.0344
+2025-04-30 18:04:20 INFO     Completed epoch 1/3
+2025-04-30 18:04:24 INFO     Epoch 2, Impression 320/16000, Actor Loss: -0.0000, Critic Loss: 0.3556, Reward: 2.5815, Accuracy: 0.0531
+2025-04-30 18:04:28 INFO     Epoch 2, Impression 640/16000, Actor Loss: -0.0000, Critic Loss: 0.4818, Reward: 68.5842, Accuracy: 0.0469
+2025-04-30 18:04:33 INFO     Epoch 2, Impression 960/16000, Actor Loss: -0.0000, Critic Loss: 0.4837, Reward: 2.0063, Accuracy: 0.0469
+2025-04-30 18:04:37 INFO     Epoch 2, Impression 1280/16000, Actor Loss: -0.0000, Critic Loss: 0.0004, Reward: 2.4078, Accuracy: 0.0344
+2025-04-30 18:04:41 INFO     Epoch 2, Impression 1600/16000, Actor Loss: -0.0000, Critic Loss: 0.4794, Reward: 3.5037, Accuracy: 0.0625
+2025-04-30 18:04:45 INFO     Epoch 2, Impression 1920/16000, Actor Loss: -0.0000, Critic Loss: 0.4360, Reward: 2.4307, Accuracy: 0.0531
+2025-04-30 18:04:50 INFO     Epoch 2, Impression 2240/16000, Actor Loss: -0.0000, Critic Loss: 0.3135, Reward: 2.2598, Accuracy: 0.0594
+2025-04-30 18:04:56 INFO     Epoch 2, Impression 2560/16000, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 2.4450, Accuracy: 0.0469
+2025-04-30 18:05:00 INFO     Epoch 2, Impression 2880/16000, Actor Loss: -0.0000, Critic Loss: 0.4370, Reward: 4.3555, Accuracy: 0.0844
+2025-04-30 18:05:04 INFO     Epoch 2, Impression 3200/16000, Actor Loss: -0.0000, Critic Loss: 0.4012, Reward: 3.8608, Accuracy: 0.0812
+2025-04-30 18:05:09 INFO     Epoch 2, Impression 3520/16000, Actor Loss: -0.0000, Critic Loss: 0.0010, Reward: 2.3304, Accuracy: 0.0437
+2025-04-30 18:05:13 INFO     Epoch 2, Impression 3840/16000, Actor Loss: -0.0000, Critic Loss: 0.2767, Reward: 4.1460, Accuracy: 0.0375
+2025-04-30 18:05:17 INFO     Epoch 2, Impression 4160/16000, Actor Loss: -0.0000, Critic Loss: 0.4498, Reward: 3.0179, Accuracy: 0.0531
+2025-04-30 18:05:21 INFO     Epoch 2, Impression 4480/16000, Actor Loss: 0.0000, Critic Loss: 0.4672, Reward: 8.9097, Accuracy: 0.0531
+2025-04-30 18:05:25 INFO     Epoch 2, Impression 4800/16000, Actor Loss: 0.0000, Critic Loss: 0.4551, Reward: 5.5487, Accuracy: 0.0375
+2025-04-30 18:05:30 INFO     Epoch 2, Impression 5120/16000, Actor Loss: 0.0000, Critic Loss: 0.2983, Reward: 5.7904, Accuracy: 0.0562
+2025-04-30 18:05:34 INFO     Epoch 2, Impression 5440/16000, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 4.6677, Accuracy: 0.0594
+2025-04-30 18:05:39 INFO     Epoch 2, Impression 5760/16000, Actor Loss: -0.0000, Critic Loss: 0.2972, Reward: 4.0478, Accuracy: 0.0594
+2025-04-30 18:05:43 INFO     Epoch 2, Impression 6080/16000, Actor Loss: 0.0000, Critic Loss: 0.4329, Reward: 1.4576, Accuracy: 0.0437
+2025-04-30 18:05:47 INFO     Epoch 2, Impression 6400/16000, Actor Loss: 0.0000, Critic Loss: 0.4602, Reward: 2.6114, Accuracy: 0.0406
+2025-04-30 18:05:51 INFO     Epoch 2, Impression 6720/16000, Actor Loss: -0.0000, Critic Loss: 0.4322, Reward: 2.1833, Accuracy: 0.0531
+2025-04-30 18:05:56 INFO     Epoch 2, Impression 7040/16000, Actor Loss: -0.0000, Critic Loss: 0.3715, Reward: 3.9243, Accuracy: 0.0594
+2025-04-30 18:06:01 INFO     Epoch 2, Impression 7360/16000, Actor Loss: -0.0000, Critic Loss: 0.0034, Reward: 2.8441, Accuracy: 0.0406
+2025-04-30 18:06:06 INFO     Epoch 2, Impression 7680/16000, Actor Loss: -0.0000, Critic Loss: 0.4615, Reward: 3.9155, Accuracy: 0.0687
+2025-04-30 18:06:10 INFO     Epoch 2, Impression 8000/16000, Actor Loss: -0.0000, Critic Loss: 0.4679, Reward: 3.9422, Accuracy: 0.0562
+2025-04-30 18:06:15 INFO     Epoch 2, Impression 8320/16000, Actor Loss: -0.0000, Critic Loss: 0.3079, Reward: 3.0573, Accuracy: 0.0625
+2025-04-30 18:06:19 INFO     Epoch 2, Impression 8640/16000, Actor Loss: 0.0000, Critic Loss: 0.3160, Reward: 1.9982, Accuracy: 0.0437
+2025-04-30 18:06:24 INFO     Epoch 2, Impression 8960/16000, Actor Loss: 0.0000, Critic Loss: 0.3242, Reward: 4.7581, Accuracy: 0.0531
+2025-04-30 18:06:29 INFO     Epoch 2, Impression 9280/16000, Actor Loss: -0.0000, Critic Loss: 0.4570, Reward: 2.6387, Accuracy: 0.0469
+2025-04-30 18:06:34 INFO     Epoch 2, Impression 9600/16000, Actor Loss: -0.0000, Critic Loss: 0.0001, Reward: 2.7533, Accuracy: 0.0469
+2025-04-30 18:06:38 INFO     Epoch 2, Impression 9920/16000, Actor Loss: -0.0000, Critic Loss: 0.4566, Reward: 2.6548, Accuracy: 0.0469
+2025-04-30 18:06:41 INFO     Epoch 2, Impression 10240/16000, Actor Loss: -0.0000, Critic Loss: 0.4356, Reward: 3.9787, Accuracy: 0.0469
+2025-04-30 18:06:45 INFO     Epoch 2, Impression 10560/16000, Actor Loss: -0.0000, Critic Loss: 0.3307, Reward: 2.7811, Accuracy: 0.0562
+2025-04-30 18:06:49 INFO     Epoch 2, Impression 10880/16000, Actor Loss: 0.0000, Critic Loss: 0.4791, Reward: 2.9013, Accuracy: 0.0562
+2025-04-30 18:06:53 INFO     Epoch 2, Impression 11200/16000, Actor Loss: 0.0000, Critic Loss: 0.4640, Reward: 4.3302, Accuracy: 0.0406
+2025-04-30 18:06:58 INFO     Epoch 2, Impression 11520/16000, Actor Loss: 0.0000, Critic Loss: 0.4388, Reward: 4.0922, Accuracy: 0.0437
+2025-04-30 18:07:02 INFO     Epoch 2, Impression 11840/16000, Actor Loss: 0.0000, Critic Loss: 0.4087, Reward: 7.9545, Accuracy: 0.0937
+2025-04-30 18:07:08 INFO     Epoch 2, Impression 12160/16000, Actor Loss: -0.0000, Critic Loss: 0.0009, Reward: 1.0409, Accuracy: 0.0312
+2025-04-30 18:07:12 INFO     Epoch 2, Impression 12480/16000, Actor Loss: -0.0000, Critic Loss: 0.4516, Reward: 1.9209, Accuracy: 0.0312
+2025-04-30 18:07:16 INFO     Epoch 2, Impression 12800/16000, Actor Loss: 0.0000, Critic Loss: 0.4746, Reward: 7.1096, Accuracy: 0.0781
+2025-04-30 18:07:20 INFO     Epoch 2, Impression 13120/16000, Actor Loss: 0.0000, Critic Loss: 0.4155, Reward: 5.4258, Accuracy: 0.0469
+2025-04-30 18:07:24 INFO     Epoch 2, Impression 13440/16000, Actor Loss: 0.0000, Critic Loss: 0.0014, Reward: 1.6494, Accuracy: 0.0406
+2025-04-30 18:07:28 INFO     Epoch 2, Impression 13760/16000, Actor Loss: 0.0000, Critic Loss: 0.4310, Reward: 2.9827, Accuracy: 0.0531
+2025-04-30 18:07:31 INFO     Epoch 2, Impression 14080/16000, Actor Loss: 0.0000, Critic Loss: 0.0005, Reward: 6.6180, Accuracy: 0.0469
+2025-04-30 18:07:35 INFO     Epoch 2, Impression 14400/16000, Actor Loss: -0.0000, Critic Loss: 0.4194, Reward: 89.1356, Accuracy: 0.0594
+2025-04-30 18:07:39 INFO     Epoch 2, Impression 14720/16000, Actor Loss: -0.0000, Critic Loss: 0.4797, Reward: 3.3711, Accuracy: 0.0437
+2025-04-30 18:07:44 INFO     Epoch 2, Impression 15040/16000, Actor Loss: -0.0000, Critic Loss: 0.2593, Reward: 5.8945, Accuracy: 0.0625
+2025-04-30 18:07:48 INFO     Epoch 2, Impression 15360/16000, Actor Loss: -0.0000, Critic Loss: 0.4140, Reward: 1.9796, Accuracy: 0.0500
+2025-04-30 18:07:52 INFO     Epoch 2, Impression 15680/16000, Actor Loss: -0.0000, Critic Loss: 0.3674, Reward: 3.8543, Accuracy: 0.0469
+2025-04-30 18:07:57 INFO     Epoch 2, Impression 16000/16000, Actor Loss: -0.0000, Critic Loss: 0.3936, Reward: 3.4235, Accuracy: 0.0562
+2025-04-30 18:07:57 INFO     Completed epoch 2/3
+2025-04-30 18:08:01 INFO     Epoch 3, Impression 320/16000, Actor Loss: -0.0000, Critic Loss: 0.4883, Reward: 2.7051, Accuracy: 0.0562
+2025-04-30 18:08:05 INFO     Epoch 3, Impression 640/16000, Actor Loss: -0.0000, Critic Loss: 0.4595, Reward: 2.0572, Accuracy: 0.0469
+2025-04-30 18:08:10 INFO     Epoch 3, Impression 960/16000, Actor Loss: -0.0000, Critic Loss: 0.4639, Reward: 2.6664, Accuracy: 0.0562
+2025-04-30 18:08:15 INFO     Epoch 3, Impression 1280/16000, Actor Loss: -0.0000, Critic Loss: 0.0023, Reward: 3.9782, Accuracy: 0.0469
+2025-04-30 18:08:19 INFO     Epoch 3, Impression 1600/16000, Actor Loss: -0.0000, Critic Loss: 0.0011, Reward: 2.7144, Accuracy: 0.0375
+2025-04-30 18:08:23 INFO     Epoch 3, Impression 1920/16000, Actor Loss: -0.0000, Critic Loss: 0.0015, Reward: 7.8357, Accuracy: 0.0375
+2025-04-30 18:08:27 INFO     Epoch 3, Impression 2240/16000, Actor Loss: -0.0000, Critic Loss: 0.0008, Reward: 2.3029, Accuracy: 0.0594
+2025-04-30 18:08:31 INFO     Epoch 3, Impression 2560/16000, Actor Loss: -0.0000, Critic Loss: 0.1677, Reward: 4.0471, Accuracy: 0.0656
+2025-04-30 18:08:35 INFO     Epoch 3, Impression 2880/16000, Actor Loss: -0.0000, Critic Loss: 0.3208, Reward: 1.2245, Accuracy: 0.0437
+2025-04-30 18:08:38 INFO     Epoch 3, Impression 3200/16000, Actor Loss: -0.0000, Critic Loss: 0.4656, Reward: 1.9027, Accuracy: 0.0500
+2025-04-30 18:08:42 INFO     Epoch 3, Impression 3520/16000, Actor Loss: -0.0000, Critic Loss: 0.3083, Reward: 5.7256, Accuracy: 0.0719
+2025-04-30 18:08:47 INFO     Epoch 3, Impression 3840/16000, Actor Loss: -0.0000, Critic Loss: 0.4551, Reward: 5.0707, Accuracy: 0.0719
+2025-04-30 18:08:51 INFO     Epoch 3, Impression 4160/16000, Actor Loss: -0.0000, Critic Loss: 0.4794, Reward: 2.6212, Accuracy: 0.0500
+2025-04-30 18:08:56 INFO     Epoch 3, Impression 4480/16000, Actor Loss: -0.0000, Critic Loss: 0.4406, Reward: 2.0144, Accuracy: 0.0406
+2025-04-30 18:09:01 INFO     Epoch 3, Impression 4800/16000, Actor Loss: -0.0000, Critic Loss: 0.3711, Reward: 9.6653, Accuracy: 0.0500
+2025-04-30 18:09:05 INFO     Epoch 3, Impression 5120/16000, Actor Loss: -0.0000, Critic Loss: 0.4858, Reward: 2.2267, Accuracy: 0.0406
+2025-04-30 18:09:08 INFO     Epoch 3, Impression 5440/16000, Actor Loss: -0.0000, Critic Loss: 0.4211, Reward: 1.4328, Accuracy: 0.0406
+2025-04-30 18:09:12 INFO     Epoch 3, Impression 5760/16000, Actor Loss: -0.0000, Critic Loss: 0.4175, Reward: 1.7303, Accuracy: 0.0437
+2025-04-30 18:09:16 INFO     Epoch 3, Impression 6080/16000, Actor Loss: -0.0000, Critic Loss: 0.4666, Reward: 72.2289, Accuracy: 0.0687
+2025-04-30 18:09:22 INFO     Epoch 3, Impression 6400/16000, Actor Loss: -0.0000, Critic Loss: 0.0003, Reward: 2.0376, Accuracy: 0.0375
+2025-04-30 18:09:26 INFO     Epoch 3, Impression 6720/16000, Actor Loss: 0.0000, Critic Loss: 0.0004, Reward: 3.7962, Accuracy: 0.0531
+2025-04-30 18:09:30 INFO     Epoch 3, Impression 7040/16000, Actor Loss: 0.0000, Critic Loss: 0.0004, Reward: 2.7758, Accuracy: 0.0656
+2025-04-30 18:09:33 INFO     Epoch 3, Impression 7360/16000, Actor Loss: 0.0000, Critic Loss: 0.3890, Reward: 5.0200, Accuracy: 0.0437
+2025-04-30 18:09:36 INFO     Epoch 3, Impression 7680/16000, Actor Loss: -0.0000, Critic Loss: 0.4796, Reward: 3.7001, Accuracy: 0.0500
+2025-04-30 18:09:40 INFO     Epoch 3, Impression 8000/16000, Actor Loss: -0.0000, Critic Loss: 0.3820, Reward: 4.4932, Accuracy: 0.0500
+2025-04-30 18:09:44 INFO     Epoch 3, Impression 8320/16000, Actor Loss: -0.0000, Critic Loss: 0.4832, Reward: 3.9564, Accuracy: 0.0500
+2025-04-30 18:09:48 INFO     Epoch 3, Impression 8640/16000, Actor Loss: -0.0000, Critic Loss: 0.3425, Reward: 2.0379, Accuracy: 0.0375
+2025-04-30 18:09:52 INFO     Epoch 3, Impression 8960/16000, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 4.6956, Accuracy: 0.0750
+2025-04-30 18:09:56 INFO     Epoch 3, Impression 9280/16000, Actor Loss: -0.0000, Critic Loss: 0.0003, Reward: 3.3930, Accuracy: 0.0500
+2025-04-30 18:10:00 INFO     Epoch 3, Impression 9600/16000, Actor Loss: -0.0000, Critic Loss: 0.3222, Reward: 3.0344, Accuracy: 0.0437
+2025-04-30 18:10:04 INFO     Epoch 3, Impression 9920/16000, Actor Loss: -0.0000, Critic Loss: 0.2723, Reward: 3.2350, Accuracy: 0.0531
+2025-04-30 18:10:09 INFO     Epoch 3, Impression 10240/16000, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 6.2280, Accuracy: 0.0562
+2025-04-30 18:10:13 INFO     Epoch 3, Impression 10560/16000, Actor Loss: -0.0000, Critic Loss: 0.4601, Reward: 2.6333, Accuracy: 0.0594
+2025-04-30 18:10:17 INFO     Epoch 3, Impression 10880/16000, Actor Loss: -0.0000, Critic Loss: 0.3377, Reward: 1.6842, Accuracy: 0.0406
+2025-04-30 18:10:21 INFO     Epoch 3, Impression 11200/16000, Actor Loss: -0.0000, Critic Loss: 0.0009, Reward: 4.7236, Accuracy: 0.0281
+2025-04-30 18:10:25 INFO     Epoch 3, Impression 11520/16000, Actor Loss: -0.0000, Critic Loss: 0.0005, Reward: 1.9278, Accuracy: 0.0437
+2025-04-30 18:10:30 INFO     Epoch 3, Impression 11840/16000, Actor Loss: -0.0000, Critic Loss: 0.4657, Reward: 5.9803, Accuracy: 0.0844
+2025-04-30 18:10:34 INFO     Epoch 3, Impression 12160/16000, Actor Loss: -0.0000, Critic Loss: 0.4239, Reward: 3.0803, Accuracy: 0.0594
+2025-04-30 18:10:39 INFO     Epoch 3, Impression 12480/16000, Actor Loss: 0.0000, Critic Loss: 0.0003, Reward: 3.4982, Accuracy: 0.0500
+2025-04-30 18:10:43 INFO     Epoch 3, Impression 12800/16000, Actor Loss: 0.0000, Critic Loss: 0.4766, Reward: 6.1202, Accuracy: 0.0656
+2025-04-30 18:10:46 INFO     Epoch 3, Impression 13120/16000, Actor Loss: 0.0000, Critic Loss: 0.2692, Reward: 2.3200, Accuracy: 0.0375
+2025-04-30 18:10:49 INFO     Epoch 3, Impression 13440/16000, Actor Loss: -0.0000, Critic Loss: 0.0003, Reward: 0.5515, Accuracy: 0.0156
+2025-04-30 18:10:52 INFO     Epoch 3, Impression 13760/16000, Actor Loss: -0.0000, Critic Loss: 0.0002, Reward: 3.8319, Accuracy: 0.0437
+2025-04-30 18:10:56 INFO     Epoch 3, Impression 14080/16000, Actor Loss: -0.0000, Critic Loss: 0.2769, Reward: 4.4422, Accuracy: 0.0625
+2025-04-30 18:10:59 INFO     Epoch 3, Impression 14400/16000, Actor Loss: -0.0000, Critic Loss: 0.4139, Reward: 5.7382, Accuracy: 0.0969
+2025-04-30 18:11:04 INFO     Epoch 3, Impression 14720/16000, Actor Loss: -0.0000, Critic Loss: 0.3919, Reward: 2.5570, Accuracy: 0.0750
+2025-04-30 18:11:09 INFO     Epoch 3, Impression 15040/16000, Actor Loss: 0.0000, Critic Loss: 0.4551, Reward: 4.3824, Accuracy: 0.0625
+2025-04-30 18:11:13 INFO     Epoch 3, Impression 15360/16000, Actor Loss: 0.0000, Critic Loss: 0.4612, Reward: 87.4503, Accuracy: 0.0469
+2025-04-30 18:11:17 INFO     Epoch 3, Impression 15680/16000, Actor Loss: 0.0000, Critic Loss: 0.0013, Reward: 2.0027, Accuracy: 0.0531
+2025-04-30 18:11:21 INFO     Epoch 3, Impression 16000/16000, Actor Loss: 0.0000, Critic Loss: 0.0018, Reward: 6.5990, Accuracy: 0.0469
+2025-04-30 18:11:21 INFO     Completed epoch 3/3
+2025-04-30 18:11:21 INFO     Training completed. Generating predictions on test data...
+2025-04-30 18:11:26 INFO     Processed 1000 test impressions
+2025-04-30 18:11:31 INFO     Processed 2000 test impressions
+2025-04-30 18:11:36 INFO     Processed 3000 test impressions
+2025-04-30 18:11:41 INFO     Processed 4000 test impressions
+2025-04-30 18:11:41 INFO     Successfully saved predictions to data/actor_critic_predictions_on_test.txt.gz
+2025-04-30 18:11:41 INFO     To evaluate the model, run: python compute_score.py --predictions-path data/actor_critic_predictions_on_test.txt.gz --gold-labels-path data/criteo_test_split.txt.gz
+2025-04-30 22:10:42 INFO     Reading impression IDs from ../epsilon_greedy/data/criteo_train_small.txt.gz
+2025-04-30 22:11:30 INFO     Reading impression IDs from ../epsilon_greedy/data/criteo_train.txt.gz
+2025-04-30 23:09:45 INFO     Total impressions found: 14175476
+2025-04-30 23:10:09 INFO     Split data: 11340380 training impressions, 2835096 test impressions
+2025-05-01 00:01:35 INFO     Maximum feature ID found: 73988
+2025-05-01 02:53:46 INFO     Reading impression IDs from ../epsilon_greedy/data/criteo_train_small.txt.gz
+2025-05-01 02:53:48 INFO     Total impressions found: 20000
+2025-05-01 02:53:48 INFO     Split data: 16000 training impressions, 4000 test impressions
+2025-05-01 02:53:51 INFO     Maximum feature ID found: 73577
+2025-05-01 02:53:55 INFO     Test data saved to data/criteo_test_split.txt.gz
+2025-05-01 02:53:55 INFO     Training impressions collected: 16000
+2025-05-01 02:53:58 INFO     Initialized Actor-Critic model with feature_dim=73578, hidden_dims=[128, 64]
+2025-05-01 02:53:58 INFO     Training for 1 epochs with batch size 32
+2025-05-01 02:54:00 INFO     Epoch 1, Impression 320/16000, Actor Loss: 0.0000, Critic Loss: 0.3009, Reward: 3.1038, Accuracy: 0.0281
+2025-05-01 02:54:03 INFO     Epoch 1, Impression 640/16000, Actor Loss: 0.0000, Critic Loss: 0.4866, Reward: 2.5835, Accuracy: 0.0406
+2025-05-01 02:54:05 INFO     Epoch 1, Impression 960/16000, Actor Loss: 0.0000, Critic Loss: 0.4610, Reward: 4.8616, Accuracy: 0.0562
+2025-05-01 02:54:08 INFO     Epoch 1, Impression 1280/16000, Actor Loss: -0.0000, Critic Loss: 0.3814, Reward: 4.6147, Accuracy: 0.0656
+2025-05-01 02:54:13 INFO     Epoch 1, Impression 1600/16000, Actor Loss: -0.0000, Critic Loss: 0.4643, Reward: 2.2620, Accuracy: 0.0469
+2025-05-01 02:54:16 INFO     Epoch 1, Impression 1920/16000, Actor Loss: -0.0000, Critic Loss: 0.4694, Reward: 1.5927, Accuracy: 0.0406
+2025-05-01 02:54:19 INFO     Epoch 1, Impression 2240/16000, Actor Loss: 0.0000, Critic Loss: 0.3229, Reward: 2.3278, Accuracy: 0.0531
+2025-05-01 02:54:21 INFO     Epoch 1, Impression 2560/16000, Actor Loss: -0.0000, Critic Loss: 0.0017, Reward: 5.2539, Accuracy: 0.0562
+2025-05-01 02:54:23 INFO     Epoch 1, Impression 2880/16000, Actor Loss: -0.0000, Critic Loss: 0.4825, Reward: 1.4693, Accuracy: 0.0531
+2025-05-01 02:54:26 INFO     Epoch 1, Impression 3200/16000, Actor Loss: -0.0000, Critic Loss: 0.4741, Reward: 8.0680, Accuracy: 0.0594
+2025-05-01 02:54:30 INFO     Epoch 1, Impression 3520/16000, Actor Loss: -0.0000, Critic Loss: 0.0014, Reward: 1.0933, Accuracy: 0.0406
+2025-05-01 02:54:32 INFO     Epoch 1, Impression 3840/16000, Actor Loss: 0.0000, Critic Loss: 0.3475, Reward: 4.7344, Accuracy: 0.0594
+2025-05-01 02:54:34 INFO     Epoch 1, Impression 4160/16000, Actor Loss: 0.0000, Critic Loss: 0.4676, Reward: 2.4119, Accuracy: 0.0344
+2025-05-01 02:54:37 INFO     Epoch 1, Impression 4480/16000, Actor Loss: -0.0000, Critic Loss: 0.4737, Reward: 9.7565, Accuracy: 0.0656
+2025-05-01 02:54:39 INFO     Epoch 1, Impression 4800/16000, Actor Loss: -0.0000, Critic Loss: 0.4456, Reward: 3.8538, Accuracy: 0.0406
+2025-05-01 02:54:41 INFO     Epoch 1, Impression 5120/16000, Actor Loss: -0.0000, Critic Loss: 0.4540, Reward: 3.3043, Accuracy: 0.0500
+2025-05-01 02:54:44 INFO     Epoch 1, Impression 5440/16000, Actor Loss: -0.0000, Critic Loss: 0.4058, Reward: 83.2612, Accuracy: 0.0656
+2025-05-01 02:54:49 INFO     Epoch 1, Impression 5760/16000, Actor Loss: 0.0000, Critic Loss: 0.4651, Reward: 69.4547, Accuracy: 0.0437
+2025-05-01 02:54:52 INFO     Epoch 1, Impression 6080/16000, Actor Loss: 0.0000, Critic Loss: 0.3013, Reward: 3.7952, Accuracy: 0.0344
+2025-05-01 02:54:55 INFO     Epoch 1, Impression 6400/16000, Actor Loss: 0.0000, Critic Loss: 0.0004, Reward: 1.9335, Accuracy: 0.0344
+2025-05-01 02:54:57 INFO     Epoch 1, Impression 6720/16000, Actor Loss: 0.0000, Critic Loss: 0.4383, Reward: 3.6745, Accuracy: 0.0531
+2025-05-01 02:54:59 INFO     Epoch 1, Impression 7040/16000, Actor Loss: 0.0000, Critic Loss: 0.4116, Reward: 2.7163, Accuracy: 0.0687
+2025-05-01 02:55:02 INFO     Epoch 1, Impression 7360/16000, Actor Loss: 0.0000, Critic Loss: 0.3857, Reward: 2.3819, Accuracy: 0.0437
+2025-05-01 02:55:04 INFO     Epoch 1, Impression 7680/16000, Actor Loss: -0.0000, Critic Loss: 0.4775, Reward: 5.1290, Accuracy: 0.0437
+2025-05-01 02:55:06 INFO     Epoch 1, Impression 8000/16000, Actor Loss: -0.0000, Critic Loss: 0.0074, Reward: 8.8766, Accuracy: 0.0562
+2025-05-01 02:55:09 INFO     Epoch 1, Impression 8320/16000, Actor Loss: -0.0000, Critic Loss: 0.2243, Reward: 5.3617, Accuracy: 0.0500
+2025-05-01 02:55:12 INFO     Epoch 1, Impression 8640/16000, Actor Loss: -0.0000, Critic Loss: 0.4547, Reward: 3.9696, Accuracy: 0.0625
+2025-05-01 02:55:14 INFO     Epoch 1, Impression 8960/16000, Actor Loss: 0.0000, Critic Loss: 0.4507, Reward: 6.7531, Accuracy: 0.0687
+2025-05-01 02:55:17 INFO     Epoch 1, Impression 9280/16000, Actor Loss: 0.0000, Critic Loss: 0.4681, Reward: 1.9679, Accuracy: 0.0437
+2025-05-01 02:55:19 INFO     Epoch 1, Impression 9600/16000, Actor Loss: 0.0000, Critic Loss: 0.3887, Reward: 3.6179, Accuracy: 0.0437
+2025-05-01 02:55:25 INFO     Epoch 1, Impression 9920/16000, Actor Loss: 0.0000, Critic Loss: 0.4007, Reward: 2.8229, Accuracy: 0.0656
+2025-05-01 02:55:28 INFO     Epoch 1, Impression 10240/16000, Actor Loss: 0.0000, Critic Loss: 0.4711, Reward: 5.3022, Accuracy: 0.0469
+2025-05-01 02:55:30 INFO     Epoch 1, Impression 10560/16000, Actor Loss: -0.0000, Critic Loss: 0.4131, Reward: 1.7786, Accuracy: 0.0375
+2025-05-01 02:55:33 INFO     Epoch 1, Impression 10880/16000, Actor Loss: -0.0000, Critic Loss: 0.3952, Reward: 3.0453, Accuracy: 0.0594
+2025-05-01 02:55:36 INFO     Epoch 1, Impression 11200/16000, Actor Loss: -0.0000, Critic Loss: 0.4513, Reward: 6.0065, Accuracy: 0.0437
+2025-05-01 02:55:39 INFO     Epoch 1, Impression 11520/16000, Actor Loss: 0.0000, Critic Loss: 0.0001, Reward: 2.5087, Accuracy: 0.0406
+2025-05-01 02:55:42 INFO     Epoch 1, Impression 11840/16000, Actor Loss: 0.0000, Critic Loss: 0.4298, Reward: 5.1083, Accuracy: 0.0656
+2025-05-01 02:55:44 INFO     Epoch 1, Impression 12160/16000, Actor Loss: -0.0000, Critic Loss: 0.4784, Reward: 3.9059, Accuracy: 0.0750
+2025-05-01 02:55:46 INFO     Epoch 1, Impression 12480/16000, Actor Loss: -0.0000, Critic Loss: 0.0001, Reward: 3.1270, Accuracy: 0.0594
+2025-05-01 02:55:49 INFO     Epoch 1, Impression 12800/16000, Actor Loss: -0.0000, Critic Loss: 0.3643, Reward: 2.5523, Accuracy: 0.0500
+2025-05-01 02:55:51 INFO     Epoch 1, Impression 13120/16000, Actor Loss: 0.0000, Critic Loss: 0.0006, Reward: 2.4043, Accuracy: 0.0500
+2025-05-01 02:55:54 INFO     Epoch 1, Impression 13440/16000, Actor Loss: 0.0000, Critic Loss: 0.2915, Reward: 1.0594, Accuracy: 0.0469
+2025-05-01 02:56:01 INFO     Epoch 1, Impression 13760/16000, Actor Loss: 0.0000, Critic Loss: 0.4762, Reward: 6.5400, Accuracy: 0.0781
+2025-05-01 02:56:04 INFO     Epoch 1, Impression 14080/16000, Actor Loss: 0.0000, Critic Loss: 0.4443, Reward: 2.3619, Accuracy: 0.0562
+2025-05-01 02:56:07 INFO     Epoch 1, Impression 14400/16000, Actor Loss: -0.0000, Critic Loss: 0.4495, Reward: 2.1606, Accuracy: 0.0562
+2025-05-01 02:56:09 INFO     Epoch 1, Impression 14720/16000, Actor Loss: 0.0000, Critic Loss: 0.4517, Reward: 1.9843, Accuracy: 0.0719
+2025-05-01 02:56:12 INFO     Epoch 1, Impression 15040/16000, Actor Loss: 0.0000, Critic Loss: 0.4247, Reward: 3.6623, Accuracy: 0.0531
+2025-05-01 02:56:15 INFO     Epoch 1, Impression 15360/16000, Actor Loss: 0.0000, Critic Loss: 0.3590, Reward: 5.9047, Accuracy: 0.0687
+2025-05-01 02:56:17 INFO     Epoch 1, Impression 15680/16000, Actor Loss: 0.0000, Critic Loss: 0.4478, Reward: 2.7152, Accuracy: 0.0531
+2025-05-01 02:56:19 INFO     Epoch 1, Impression 16000/16000, Actor Loss: 0.0000, Critic Loss: 0.1739, Reward: 2.9417, Accuracy: 0.0344
+2025-05-01 02:56:19 INFO     Completed epoch 1/1
+2025-05-01 02:56:19 INFO     Training completed. Generating predictions on test data...
+2025-05-01 02:56:22 INFO     Processed 1000 test impressions
+2025-05-01 02:56:24 INFO     Processed 2000 test impressions
+2025-05-01 02:56:27 INFO     Processed 3000 test impressions
+2025-05-01 02:56:30 INFO     Processed 4000 test impressions
+2025-05-01 02:56:30 INFO     Successfully saved predictions to data/actor_critic_predictions_on_test.txt.gz
+2025-05-01 02:56:30 INFO     To evaluate the model, run: python compute_score.py --predictions-path data/actor_critic_predictions_on_test.txt.gz --gold-labels-path data/criteo_test_split.txt.gz

@@ -13,7 +13,7 @@ from criteo_prediction import CriteoPrediction
 from utils import compute_integral_hash
 
 def grade_predictions(predictions_path, gold_labels_path, expected_number_of_predictions=False, force_gzip=False, _context=False, salt_swap=False, inverse_propensity_in_gold_data=True, jobfactory_utils=False, _debug = False):
-    gold_data = CriteoDataset(gold_labels_path, isGzip=force_gzip, inverse_propensity=inverse_propensity_in_gold_data)
+    gold_data = CriteoDataset(gold_labels_path, inverse_propensity=inverse_propensity_in_gold_data)
     predictions = CriteoPrediction(predictions_path, isGzip=force_gzip)
 
     # Instantiate variables
